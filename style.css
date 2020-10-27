@@ -1,0 +1,151 @@
+@font-face 
+{
+    font-family: 'ralewaythin';
+    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    src: local('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+    	local('raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	font-family: raleway, "times new roman", Impact, arial;
+	background-image: url(logo_reservia.png) ;
+	background-repeat: no-repeat;
+	background-position: top 10px left 130px;
+	
+}
+
+#bloc_page
+{
+	width: 1400px;
+	margin: auto;
+	border: 2px solid blue;
+}
+
+#en_tete
+{
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul
+{
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-start;
+}
+
+strong
+{
+	color: #0065FC;
+}
+
+a /*Liens non survolés*/
+{
+	text-decoration: none;
+}
+
+a:hover /*Apparence au survol des liens*/
+{
+	color: #0065FC;
+}
+
+a:active /*Lorsque l'on clique sur le lien*/
+{
+	text-decoration: underline;
+}
+
+nav li
+{
+	margin-right: 60px;
+}
+
+h1
+{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+.photo
+{
+	width: 230px;
+}
+
+.container
+{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+#hebergements
+{
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 850px;
+	height: 1300px;
+	border: 2px solid blue;
+}
+
+.hebergement
+{
+	margin: 20px;
+	border: 2px solid pink;
+	width: 260px;
+	height: 300px;
+}
+
+#populaires
+{
+	display: flex;
+	flex-wrap: wrap;
+	height: 1300px;
+	width: 400px;
+	border: 2px solid blue;
+}
+
+.populaire
+{
+	margin: 20px;
+	border: 2px solid pink;
+	width: 270px;
+	height: 300px;
+}
+
+#activites
+{
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid blue;
+	height: 900px;
+}
+
+.activite
+{
+	margin: 20px;
+	border: 2px solid pink;
+	width: 350px
+}
+
+#pied_de_page
+{
+	margin-top: 20px;
+	padding-top: 20px;
+	border: 2px solid yellow;
+	display: flex;
+	justify-content: space-around;
+	height: 200px;
+}
