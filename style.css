@@ -10,21 +10,19 @@
 body
 {
 	font-family: 'ralewaythin';
-	margin: 0;
 }
 
 
 #bloc_page
 {	
 	width: 1500px;
-	padding: 10px;
 	margin: auto;
 	border: 2px solid blue;	
 }
 
 header
 {
-	background : url("logo.png");
+	background-image: url("logo.png");
 	background-repeat: no-repeat;
 	background-size: 97px 45px;
 	margin: 10px;
@@ -46,11 +44,10 @@ header
 
 nav li
 {
-	display: inline-block;
+	display: inline-flex;
 	border: 2px solid #F2F2F2;
-	border-radius: 0px 20px 20px 0px;
-	padding-right: 10px;
-	padding-left: 0px
+	padding: 10px;
+	border-radius: 20px 20px 20px 20px;
 	margin-right: 60px;
 }
 
@@ -169,7 +166,7 @@ a:active /*Lorsque l'on clique sur le lien*/
 
 h1
 {
-	font-size: 1.4em;
+	font-size: 1.4em; /*Unité "em" est la taille de la police de caractères*/
 	font-weight: bold;
 }
 
@@ -184,17 +181,29 @@ h2
 	font-weight: bold;
 }
 
-
-#hebergements
+.container
 {
-	display: inline-block;
-	
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap reverse;
+	border: 2px solid red;
+}
+
+#hebergements /*élément parent*/
+{	
+	margin: 10px;
+	display: inline-flex;
+	align-content: space-between;
+	flex-wrap: wrap;
 	background-color:#F2F2F2; 
-	width: 900px;
-	height: auto;
+	width: 65%;
 	border: 2px solid blue;
 }
 
+.hebergement1:hover /*permet d'avoir un cadre en survol du lien*/
+{
+	border: 2px solid black;
+}
 
 .hebergement1
 {
@@ -202,9 +211,10 @@ h2
 	background-size: cover;	
 	width: 250px;
 	height: 195px;
-	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement2
@@ -214,8 +224,9 @@ h2
 	width: 250px;
 	height: 195px;
 	margin: 10px;
-	padding: 10px;
-	border: 2px solid pink;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement3
@@ -225,8 +236,9 @@ h2
 	width: 250px;
 	height: 195px;
 	margin: 10px;
-	padding: 10px;
-	border: 2px solid pink;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement4
@@ -236,8 +248,9 @@ h2
 	width: 250px;
 	height: 195px;
 	margin: 10px;
-	padding: 10px;
-	border: 2px solid pink;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement5
@@ -246,9 +259,10 @@ h2
 	background-size: cover;	
 	width: 250px;
 	height: 195px;
-	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement6
@@ -257,20 +271,22 @@ h2
 	background-size: cover;	
 	width: 250px;
 	height: 195px;
-	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
-#populaires
+#populaires/*élément parent*/
 {
+	margin: 10px;
+	padding: 0px;
 	display: flex;
 	align-content: space-between;
 	flex-wrap: wrap;
 	border: 2px solid blue;
 	background-color: #F2F2F2;
-	width: 400px;
-	height: auto;
+	width: 35%;
 }
 
 .populaire1
@@ -281,10 +297,11 @@ h2
 	height: 150px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
-.populaire2
+.populaire2 
 {
 	background-image: url("css/mini_photos/populaires/mini_coeur_de_leau.jpg");
 	background-size: cover;	
@@ -292,38 +309,29 @@ h2
 	height: 150px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
 .populaire3
 {
 	background-image: url("css/mini_photos/populaires/mini_bleu_et_blanc.jpg");
-	background-size: contain;	
-	background-repeat: no-repeat;
+	background-size: cover;
 	width: 310px;
 	height: 150px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px grey;
 }
 
-
-.hebergement a:hover
-{
-	border: 2px solid #0065FC;
-}
-
-#activites
+#activites /*élément parent*/
 {
 	display: flex;
-	align-content: space-around;
 	flex-wrap: wrap;
-	margin: 10px
-	padding: 10px;
-	border: 2px solid blue;
-	
+	margin: 10px;
+	border: 2px solid red;
 }
-
 
 .activite1
 {
@@ -333,7 +341,8 @@ h2
 	height: 400px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #F2F2F2;
 }
 
 .activite2
@@ -344,7 +353,8 @@ h2
 	height: 250px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #F2F2F2;
 }
 
 
@@ -356,7 +366,8 @@ h2
 	height: 150px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #F2F2F2;
 }
 
 .activite4
@@ -367,7 +378,8 @@ h2
 	height: 400px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #F2F2F2;
 }
 
 
@@ -379,11 +391,11 @@ h2
 	height: 150px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #F2F2F2;
 }
 
 .activite6
-
 {
 	background-image: url(activites/longchamp.jpg);
 	background-size: cover;
@@ -391,13 +403,13 @@ h2
 	height: 250px;
 	padding: 10px;
 	margin: 10px;
-	border: 2px solid pink;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #F2F2F2;
 }
 
 #pied_de_page
 {
-	margin-top: 20px;
-	padding-top: 20px;
+	margin: 10px;
 	border: 2px solid red;
 	display: flex;
 	justify-content: space-around;
