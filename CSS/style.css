@@ -1,0 +1,260 @@
+@font-face 
+{
+    font-family: 'ralewaythin';
+    src: url("Raleway/Raleway-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	font-family: 'ralewaythin';
+	margin: 0;
+}
+
+
+#bloc_page
+{	
+	width: 1500px;
+	padding: 10px;
+	margin: auto;
+	border: 2px solid blue;	
+}
+
+header
+{
+	background : url("logo.png");
+	background-repeat: no-repeat;
+	background-size: 97px 45px;
+	margin: 10px;
+	border: 2px solid red;
+}
+
+
+#menu
+{	
+	list-style-type: none;	
+	text-align: right;
+}
+
+#menu a:hover /*Apparence au survol des liens*/
+{
+	border-top: 2px solid #0065FC;
+	color: #0065FC;
+}
+
+nav li
+{
+	display: inline-block;
+	border: 2px solid #F2F2F2;
+	margin-right: 60px;
+}
+
+#recherches
+{
+	border: 2px solid red;
+	margin: 10px;
+}
+
+.fa-map-marker-alt
+{
+	color: black;
+	background-color:#F2F2F2;
+	border: 1px solid #F2F2F2;
+	padding: 16px;
+	border-radius: 15px 0px 0px 15px;
+}
+
+#champ_recherche
+{
+	width: 220px;
+	height: 50px;
+	font-size: 1.1em;
+	border: 1px solid #F2F2F2;
+}
+
+#rechercher
+{
+	width: 150px;
+	height: 50px;
+	background-color: #0065FC;
+	color: white;
+	font-size: 1.1em;
+	border-radius: 0px 15px 15px 0px;
+	border-style: none;
+}
+
+#filtres
+{
+	display: inline-block;
+	font-weight: bold;
+	list-style-type: none;	
+	text-align: left;
+}
+
+#filtres a:hover /*Apparence au survol des liens*/
+{
+  	color:#0065FC;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.fa-money-bill-wave
+{
+	font-size: 20px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 0px;
+}
+
+.fa-child
+{
+	font-size: 20px ;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.fa-heart
+{
+	font-size: 20px ;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.fa-dog
+{
+	font-size:20px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.fa-info
+{
+	color: #0065FC;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;	
+}
+
+strong
+{
+	color: #0065FC;
+}
+
+a /*Liens non survolés*/
+{
+	text-decoration: none;
+	color: black;
+}
+
+a:active /*Lorsque l'on clique sur le lien*/
+{
+	text-decoration: underline;
+}
+
+h1
+{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+img
+{
+	width: 220px;
+	height:auto;
+}
+
+#container
+{
+	display: flex;
+	align-content: space-between;
+	text-align: left;
+	border: 2px solid red;
+}
+
+#hebergements
+{
+
+	width: 800px;
+	height: 1300px;
+	border: 2px solid blue;
+	margin: 30px;
+	
+}
+
+.hebergement1
+{
+	background-image: url(hebergements/mini_photos/mini_cannebiere.jpg);
+	background-size: cover;
+	width: 230px;
+	height: 150px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;	
+}
+
+.hebergement:hover
+{
+	border: 2px solid #0065FC;
+}
+
+#populaires
+{
+	border: 2px solid blue;
+	background-color: #F2F2F2;
+	width: 400px;
+	height: 1300px;
+}
+
+.populaire1
+ {
+  	background-image: url(hebergements/mini_photos/populaires/mini_soleil_du_matin.jpg);
+	background-size: cover;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+#activites
+{
+	width: 1300px;
+	height: 600px;
+	border: 2px solid blue;
+}
+
+.activite
+{
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+#pied_de_page
+{
+	margin-top: 20px;
+	padding-top: 20px;
+	border: 2px solid yellow;
+	display: flex;
+	justify-content: space-around;
+	height: 200px;
+	background-color: #F2F2F2;
+}

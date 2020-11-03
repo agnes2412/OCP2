@@ -1,10 +1,7 @@
 @font-face 
 {
     font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff');
-    src: local('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-    	local('raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url("Raleway/Raleway-VariableFont_wght.ttf");
     font-weight: normal;
     font-style: normal;
 
@@ -12,33 +9,146 @@
 
 body
 {
-	font-family: raleway, "times new roman", Impact, arial;
-	background-image: url(logo_reservia.png) ;
-	background-repeat: no-repeat;
-	background-position: top 10px left 130px;
-	
+	font-family: 'ralewaythin';
+	margin: 0;
 }
-
 
 
 #bloc_page
-{
-	width: 1400px;
+{	
+	width: 1500px;
+	padding: 10px;
 	margin: auto;
-	border: 2px solid blue;
+	border: 2px solid blue;	
 }
 
-#en_tete
+header
 {
-	display: flex;
-	justify-content: flex-end;
+	background : url("logo.png");
+	background-repeat: no-repeat;
+	background-size: 97px 45px;
+	margin: 10px;
+	border: 2px solid red;
 }
 
-nav ul
+
+#menu
+{	
+	list-style-type: none;	
+	text-align: right;
+}
+
+#menu a:hover /*Apparence au survol des liens*/
 {
-	display: flex;
-	list-style-type: none;
-	justify-content: flex-start;
+	border-top: 2px solid #0065FC;
+	color: #0065FC;
+}
+
+nav li
+{
+	display: inline-block;
+	border: 2px solid #F2F2F2;
+	border-radius: 0px 20px 20px 0px;
+	padding-right: 10px;
+	padding-left: 0px
+	margin-right: 60px;
+}
+
+#recherches
+{
+	border: 2px solid red;
+	margin: 10px;
+}
+
+.fa-map-marker-alt
+{
+	color: black;
+	background-color:#F2F2F2;
+	border: 1px solid #F2F2F2;
+	padding: 16px;
+	border-radius: 15px 0px 0px 15px;
+}
+
+#champ_recherche
+{
+	width: 220px;
+	height: 50px;
+	font-size: 1.1em;
+	border: 1px solid #F2F2F2;
+}
+
+#rechercher
+{
+	width: 150px;
+	height: 50px;
+	background-color: #0065FC;
+	color: white;
+	font-size: 1.1em;
+	border-radius: 0px 15px 15px 0px;
+	border-style: none;
+}
+
+#filtres
+{
+	display: inline-block;
+	font-weight: bold;
+	list-style-type: none;	
+	text-align: left;
+}
+
+#filtres a:hover /*Apparence au survol des liens*/
+{
+  	color:#0065FC;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.fa-money-bill-wave
+{
+	font-size: 20px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.fa-child
+{
+	font-size: 20px ;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.fa-heart
+{
+	font-size: 20px ;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.fa-dog
+{
+	font-size:20px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.fa-info
+{
+	color: #0065FC;
+	border: 1px solid #DEEBFF;
+	border-radius: 20px;
+	padding: 10px;	
 }
 
 strong
@@ -49,11 +159,7 @@ strong
 a /*Liens non survolés*/
 {
 	text-decoration: none;
-}
-
-a:hover /*Apparence au survol des liens*/
-{
-	color: #0065FC;
+	color: black;
 }
 
 a:active /*Lorsque l'on clique sur le lien*/
@@ -61,15 +167,15 @@ a:active /*Lorsque l'on clique sur le lien*/
 	text-decoration: underline;
 }
 
-nav li
-{
-	margin-right: 60px;
-}
-
 h1
 {
 	font-size: 1.4em;
 	font-weight: bold;
+}
+
+#hebergements h1 
+{
+	border: 1px solid black;
 }
 
 h2
@@ -79,75 +185,222 @@ h2
 }
 
 
-.photo
-{
-	width: 230px;
-}
-
-.container
-{
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-}
-
 #hebergements
 {
-	margin: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	width: 850px;
-	height: 1300px;
+	display: inline-block;
+	
+	background-color:#F2F2F2; 
+	width: 900px;
+	height: auto;
 	border: 2px solid blue;
 }
 
-.hebergement
+
+.hebergement1
 {
-	margin: 20px;
+	background-image: url("css/mini_photos/mini_cannebiere.jpg");
+	background-size: cover;	
+	width: 250px;
+	height: 195px;
+	padding: 10px;
+	margin: 10px;
 	border: 2px solid pink;
-	width: 260px;
-	height: 300px;
+}
+
+.hebergement2
+{
+	background-image: url("css/mini_photos/mini_port.jpg");
+	background-size: cover;	
+	width: 250px;
+	height: 195px;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid pink;
+}
+
+.hebergement3
+{
+	background-image: url("css/mini_photos/mini_mouettes.jpg");
+	background-size: cover;	
+	width: 250px;
+	height: 195px;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid pink;
+}
+
+.hebergement4
+{
+	background-image: url("css/mini_photos/mini_la_mer.jpg");
+	background-size: cover;	
+	width: 250px;
+	height: 195px;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid pink;
+}
+
+.hebergement5
+{
+	background-image: url("css/mini_photos/mini_panier.jpg");
+	background-size: cover;	
+	width: 250px;
+	height: 195px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+.hebergement6
+{
+	background-image: url("css/mini_photos/mini_amina.jpg");
+	background-size: cover;	
+	width: 250px;
+	height: 195px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
 }
 
 #populaires
 {
 	display: flex;
+	align-content: space-between;
 	flex-wrap: wrap;
-	height: 1300px;
-	width: 400px;
 	border: 2px solid blue;
+	background-color: #F2F2F2;
+	width: 400px;
+	height: auto;
 }
 
-.populaire
+.populaire1
 {
-	margin: 20px;
+	background-image: url("css/mini_photos/populaires/mini_soleil_du_matin.jpg"); 
+	background-size: cover;	
+	width: 310px;
+	height: 150px;
+	padding: 10px;
+	margin: 10px;
 	border: 2px solid pink;
-	width: 270px;
-	height: 300px;
+}
+
+.populaire2
+{
+	background-image: url("css/mini_photos/populaires/mini_coeur_de_leau.jpg");
+	background-size: cover;	
+	width: 310px;
+	height: 150px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+.populaire3
+{
+	background-image: url("css/mini_photos/populaires/mini_bleu_et_blanc.jpg");
+	background-size: contain;	
+	background-repeat: no-repeat;
+	width: 310px;
+	height: 150px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+
+.hebergement a:hover
+{
+	border: 2px solid #0065FC;
 }
 
 #activites
 {
 	display: flex;
+	align-content: space-around;
 	flex-wrap: wrap;
+	margin: 10px
+	padding: 10px;
 	border: 2px solid blue;
-	height: 900px;
+	
 }
 
-.activite
+
+.activite1
 {
-	margin: 20px;
+	background-image: url("activites/vieux_port.jpg");
+	background-size:cover;
+	width: 300px;
+	height: 400px;
+	padding: 10px;
+	margin: 10px;
 	border: 2px solid pink;
-	width: 350px
+}
+
+.activite2
+{
+	background-image: url(activites/pomegues.jpg);
+	background-size: cover;
+	width: 300px;
+	height: 250px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+
+.activite3
+{
+	background-image: url("activites/iles_frioul.jpg");
+	background-size: cover;
+	width: 300px;
+	height: 150px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+.activite4
+{
+	background-image: url("activites/calanques.jpg");
+	background-size: cover;
+	width: 300px;
+	height: 400px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+
+.activite5
+{
+	background-image: url("activites/bonne_mere.jpg");
+	background-size: cover;
+	width: 300px;
+	height: 150px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
+}
+
+.activite6
+
+{
+	background-image: url(activites/longchamp.jpg);
+	background-size: cover;
+	width: 300px;
+	height: 250px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid pink;
 }
 
 #pied_de_page
 {
 	margin-top: 20px;
 	padding-top: 20px;
-	border: 2px solid yellow;
+	border: 2px solid red;
 	display: flex;
 	justify-content: space-around;
 	height: 200px;
+	background-color: #F2F2F2;
 }
