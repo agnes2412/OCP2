@@ -1,40 +1,62 @@
 @font-face 
 {
-    font-family: 'ralewaythin';
+    font-family: 'raleway';
     src: url("Raleway/Raleway-VariableFont_wght.ttf");
     font-weight: normal;
     font-style: normal;
-
 }
 
 body
 {
-	font-family: 'ralewaythin';
+	font-family: 'raleway';	
 }
 
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid green;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 #bloc_page
 {	
-	width: 1500px;
+	width: 82%;
 	margin: auto;
 	border: 2px solid blue;	
 }
 
-header
+header /* Bloc en-tête avec logo */
 {
 	background-image: url("logo.png");
 	background-repeat: no-repeat;
 	background-size: 97px 45px;
-	margin: 10px;
 	border: 2px solid red;
 }
 
-
-#menu
-{	
-	list-style-type: none;	
-	text-align: right;
+#menu li
+{
+	display: inline-flex;
+	float: left;
+	margin-left: 70px;
+	list-style-type: none;
 }
+
 
 #menu a:hover /*Apparence au survol des liens*/
 {
@@ -42,19 +64,10 @@ header
 	color: #0065FC;
 }
 
-nav li
-{
-	display: inline-flex;
-	border: 2px solid #F2F2F2;
-	padding: 10px;
-	border-radius: 20px 20px 20px 20px;
-	margin-right: 60px;
-}
 
-#recherches
+#recherches /*Bloc recherches*/
 {
 	border: 2px solid red;
-	margin: 10px;
 }
 
 .fa-map-marker-alt
@@ -62,8 +75,8 @@ nav li
 	color: black;
 	background-color:#F2F2F2;
 	border: 1px solid #F2F2F2;
-	padding: 16px;
-	border-radius: 15px 0px 0px 15px;
+	padding: 17px;
+	border-radius: 17px 0px 0px 17px;
 }
 
 #champ_recherche
@@ -72,25 +85,48 @@ nav li
 	height: 50px;
 	font-size: 1.1em;
 	border: 1px solid #F2F2F2;
+	font-family: 'raleway';
+	font-weight: bold;
+	margin: 0 -5px 0 -5px;
+	padding-left: 15px;
 }
 
 #rechercher
 {
-	width: 150px;
+	width: 140px;
 	height: 50px;
 	background-color: #0065FC;
 	color: white;
 	font-size: 1.1em;
-	border-radius: 0px 15px 15px 0px;
+	font-family: 'raleway';
+	font-weight: bold;
+	border-radius: 0px 17px 17px 0px;
 	border-style: none;
 }
 
-#filtres
+
+#filtres nav li
+{
+	display: inline-flex;
+	border: 2px solid lightgrey;
+	border-radius: 30px 30px 30px 30px;
+	margin-left: 50px;
+	padding-right: 10px;
+}
+
+#filt
+{
+	border: 2px solid pink;
+	margin-top: 30px;
+}
+
+#filtres /*bloc filtres*/
 {
 	display: inline-block;
 	font-weight: bold;
 	list-style-type: none;	
-	text-align: left;
+	font-size: 1.1em;
+	border: 2px solid pink;
 }
 
 #filtres a:hover /*Apparence au survol des liens*/
@@ -100,14 +136,17 @@ nav li
 	font-size: 1.1em;
 }
 
+
 .fa-money-bill-wave
 {
 	font-size: 20px;
 	color: #0065FC;
 	background-color: #DEEBFF;
 	border: 1px solid #DEEBFF;
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: 50%;
+	padding: 13px 10px 13px 10px;
+	margin-right: 10px;
+	margin-left: -4px;
 }
 
 .fa-child
@@ -116,8 +155,10 @@ nav li
 	color: #0065FC;
 	background-color: #DEEBFF;
 	border: 1px solid #DEEBFF;
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: 50%;
+	padding:  12px 15px 12px 15px;
+	margin-right: 10px;
+	margin-left: -4px;
 }
 
 .fa-heart
@@ -126,8 +167,10 @@ nav li
 	color: #0065FC;
 	background-color: #DEEBFF;
 	border: 1px solid #DEEBFF;
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: 50%;
+	padding: 13px;
+	margin-right: 10px;
+	margin-left: -4px;
 }
 
 .fa-dog
@@ -136,17 +179,21 @@ nav li
 	color: #0065FC;
 	background-color: #DEEBFF;
 	border: 1px solid #DEEBFF;
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: 50%;
+	padding: 13px;
+	margin-right: 10px;
+	margin-left: -4px;
 }
 
 .fa-info
 {
+	font-size: 0.8em;
 	color: #0065FC;
 	border: 1px solid #DEEBFF;
-	border-radius: 20px;
-	padding: 10px;	
+	border-radius: 50%;
+	padding: 6px 10px 6px 10px;	
 }
+
 
 strong
 {
@@ -170,249 +217,336 @@ h1
 	font-weight: bold;
 }
 
-#hebergements h1 
-{
-	border: 1px solid black;
-}
-
 h2
 {
 	font-size: 1em;
 	font-weight: bold;
 }
 
-.container
+.bg-grey1
 {
-	margin: 10px;
+	background-color:#F2F2F2; 
+	border-radius: 20px;
+}
+
+#container /*container du bloc hébergements et populaires*/
+{
 	display: flex;
-	flex-wrap: wrap reverse;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+	border: 2px solid black;
+}
+
+.container1/*container du bloc hébergements et background grey*/
+{
+	width: 68%;
 	border: 2px solid red;
 }
 
-#hebergements /*élément parent*/
+
+#hebergements /*container du bloc parent hébergements*/
 {	
-	margin: 10px;
-	display: inline-flex;
-	align-content: space-between;
-	flex-wrap: wrap;
-	background-color:#F2F2F2; 
-	width: 65%;
-	border: 2px solid blue;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;	
 }
 
-.hebergement1:hover /*permet d'avoir un cadre en survol du lien*/
+#hebergements h2
 {
-	border: 2px solid black;
+	margin-left: 10px;	
+}
+
+#hebergements p 
+{
+	margin-top: -10px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
+	margin-left: 10px;
+	font-size: 0.9em;
+}
+
+.hover:hover/*permet d'avoir un cadre en survol du lien*/
+{
+	border: 4px solid white;
+}
+
+.mise-en-forme_heberg /*mise en forme des éléments "hébergements à Marseille"*/
+
+{
+	width: 247px;
+	height: 185px;
+	border: 5px solid white;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px lightgrey;
+	background-color: white;
+}
+
+.mise-en-forme_photo_heberg
+{
+	background-size: cover;	
+	background-position: 100%;	
+	width: 237px;
+	height: 100px;
+	border-radius: 16px 16px 0 0;
 }
 
 .hebergement1
 {
 	background-image: url("css/mini_photos/mini_cannebiere.jpg");
-	background-size: cover;	
-	width: 250px;
-	height: 195px;
-	margin: 10px;
-	padding:10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement2
 {
 	background-image: url("css/mini_photos/mini_port.jpg");
-	background-size: cover;	
-	width: 250px;
-	height: 195px;
-	margin: 10px;
-	padding:10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement3
 {
 	background-image: url("css/mini_photos/mini_mouettes.jpg");
-	background-size: cover;	
-	width: 250px;
-	height: 195px;
-	margin: 10px;
-	padding:10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement4
 {
 	background-image: url("css/mini_photos/mini_la_mer.jpg");
-	background-size: cover;	
-	width: 250px;
-	height: 195px;
-	margin: 10px;
-	padding:10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement5
 {
 	background-image: url("css/mini_photos/mini_panier.jpg");
-	background-size: cover;	
-	width: 250px;
-	height: 195px;
-	margin: 10px;
-	padding:10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
 .hebergement6
 {
 	background-image: url("css/mini_photos/mini_amina.jpg");
-	background-size: cover;	
-	width: 250px;
-	height: 195px;
-	margin: 10px;
-	padding:10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
-#populaires/*élément parent*/
+.container2/*container du bloc populaires*/
 {
-	margin: 10px;
-	padding: 0px;
+	border: 2px solid red;
+	width: 32%;
+}
+
+.bg-grey2
+{
+	background-image: url("fas fa-chart-line");
+	background-color:#F2F2F2; 
+	border-radius: 20px;
+}
+
+#populaires/*container du bloc parent populaires*/
+{
 	display: flex;
-	align-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
-	border: 2px solid blue;
-	background-color: #F2F2F2;
-	width: 35%;
+	flex-direction: column;
+	border: 2px solid pink;
+}
+
+#populaires p
+{
+	font-size: 0.9em;
+	margin-top: -10px;
+	margin-bottom: 40px;
+}
+
+#populaires h2
+{
+	word-break: break-word;
+}
+
+
+#titre_et_fleche
+{
+	font-size: 1.4em;
+	font-weight: bold;
+	border: 2px solid red;
+	
+	position: relative;
+}
+
+#icone_fleche
+{
+	border: 2px solid grey;
+	margin-left: 140px; 
+}
+
+
+.mise-en-forme_popu/*mise en forme des éléments "Les plus populaires"*/
+{
+	background-color: white;
+	width: 344px;
+	height: 135px;
+	margin: 20px;
+	border: 5px solid white;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px lightgrey;
+	padding-right: 20px;
+	
+}
+
+.mise-en-forme_photo_popu
+{
+	background-size: cover;	
+	background-position: 70%;	
+	float: left;
+	width: 126px;
+	height: 125px;
+	border-radius: 16px 0 0 16px;
+	margin-right: 20px;
 }
 
 .populaire1
 {
 	background-image: url("css/mini_photos/populaires/mini_soleil_du_matin.jpg"); 
-	background-size: cover;	
-	width: 310px;
-	height: 150px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
 .populaire2 
 {
 	background-image: url("css/mini_photos/populaires/mini_coeur_de_leau.jpg");
-	background-size: cover;	
-	width: 310px;
-	height: 150px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
 }
 
 .populaire3
 {
 	background-image: url("css/mini_photos/populaires/mini_bleu_et_blanc.jpg");
-	background-size: cover;
-	width: 310px;
-	height: 150px;
-	padding: 10px;
-	margin: 10px;
+}
+
+.fa-star
+{
+	font-size: 0.8em;
+	padding-right: 1.4px;
+
+}
+
+.blue /*couleur bleue des étoiles*/
+{
+	color:#0065FC;
+}
+
+.grey /*couleur grise des étoiles*/
+{
+	color: lightgrey;
+}
+
+
+
+.bg-white /*container bloc activités*/
+{
+	background-color: none;
+}
+
+.bg-white h1
+{
+	margin-left: 30px;
+}
+
+.mise-en-forme_photo_activ
+{
+	background-size: cover;	
+	background-position: 100%;	
+	border-radius: 16px 16px 0 0;
+}
+
+.mise-en-forme_activ
+{
+	background-size: cover;	
 	border-radius: 20px;
-	box-shadow: 7px 7px 7px grey;
+	box-shadow: 7px 7px 7px #F2F2F2;
+}
+
+#activites h2
+{ 
+	padding-left: 15px; 
+	padding-bottom: 15px;
 }
 
 #activites /*élément parent*/
 {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 10px;
+	column-count: 4;
 	border: 2px solid red;
+}
+
+.colonne1
+{
+	border: 2px solid pink;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.colonne2
+{
+	border: 2px solid pink;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .activite1
 {
 	background-image: url("activites/vieux_port.jpg");
-	background-size:cover;
 	width: 300px;
-	height: 400px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #F2F2F2;
+	height: 370px;
 }
 
 .activite2
 {
 	background-image: url(activites/pomegues.jpg);
-	background-size: cover;
 	width: 300px;
-	height: 250px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #F2F2F2;
+	height: 180px;
 }
 
 
 .activite3
 {
 	background-image: url("activites/iles_frioul.jpg");
-	background-size: cover;
 	width: 300px;
-	height: 150px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #F2F2F2;
+	height: 120px;
 }
 
 .activite4
 {
 	background-image: url("activites/calanques.jpg");
-	background-size: cover;
 	width: 300px;
-	height: 400px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #F2F2F2;
+	height: 370px;
 }
 
 
 .activite5
 {
 	background-image: url("activites/bonne_mere.jpg");
-	background-size: cover;
 	width: 300px;
-	height: 150px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #F2F2F2;
+	height: 140px;
+	
 }
 
 .activite6
 {
 	background-image: url(activites/longchamp.jpg);
-	background-size: cover;
 	width: 300px;
-	height: 250px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	box-shadow: 7px 7px 7px #F2F2F2;
+	height: 160px;
+
 }
 
-#pied_de_page
+#pied_de_page /*Bloc pied de page*/
 {
-	margin: 10px;
-	border: 2px solid red;
 	display: flex;
-	justify-content: space-around;
-	height: 200px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	column-count: 3;
 	background-color: #F2F2F2;
+	padding: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.footer
+{
+	padding-right: 200px;
+	padding-left: 60px;
+}
+
+.footer p
+{
+	margin-bottom: 10px;
 }
