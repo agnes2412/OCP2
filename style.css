@@ -36,8 +36,10 @@ body
 
 #bloc_page
 {	
-	width: 82%;
+	width: 100%;
 	margin: auto;
+	max-width: 1400px;
+	min-width: 640px;
 	border: 2px solid blue;	
 }
 
@@ -49,12 +51,16 @@ header /* Bloc en-tête avec logo */
 	border: 2px solid red;
 }
 
+#menu ul
+{
+	border: 2px solid pink;
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
 #menu li
 {
-	display: inline-flex;
-	float: left;
-	margin-left: 70px;
-	list-style-type: none;
+	list-style-type: none;	
 }
 
 
@@ -68,6 +74,9 @@ header /* Bloc en-tête avec logo */
 #recherches /*Bloc recherches*/
 {
 	border: 2px solid red;
+	max-width: 1400px;
+	min-width: 768px;
+	word-break: brea;
 }
 
 .fa-map-marker-alt
@@ -116,8 +125,7 @@ header /* Bloc en-tête avec logo */
 
 #filt
 {
-	border: 2px solid pink;
-	margin-top: 30px;
+	margin-left: -40px;
 }
 
 #filtres /*bloc filtres*/
@@ -241,15 +249,19 @@ h2
 {
 	width: 68%;
 	border: 2px solid red;
+	box-sizing: border-box;
+	
 }
 
 
 #hebergements /*container du bloc parent hébergements*/
 {	
 	display: flex;
-	justify-content: space-around;
+	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;	
 }
+
 
 #hebergements h2
 {
@@ -277,6 +289,7 @@ h2
 	border-radius: 20px;
 	box-shadow: 7px 7px 7px lightgrey;
 	background-color: white;
+	margin: 20px;
 }
 
 .mise-en-forme_photo_heberg
@@ -334,9 +347,8 @@ h2
 #populaires/*container du bloc parent populaires*/
 {
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
-	flex-direction: column;
+	justify-content: center;
 	border: 2px solid pink;
 }
 
@@ -378,8 +390,7 @@ h2
 	border: 5px solid white;
 	border-radius: 20px;
 	box-shadow: 7px 7px 7px lightgrey;
-	padding-right: 20px;
-	
+	padding-right: 20px;	
 }
 
 .mise-en-forme_photo_popu
@@ -412,7 +423,6 @@ h2
 {
 	font-size: 0.8em;
 	padding-right: 1.4px;
-
 }
 
 .blue /*couleur bleue des étoiles*/
@@ -424,8 +434,6 @@ h2
 {
 	color: lightgrey;
 }
-
-
 
 .bg-white /*container bloc activités*/
 {
@@ -525,7 +533,6 @@ h2
 	background-image: url(activites/longchamp.jpg);
 	width: 300px;
 	height: 160px;
-
 }
 
 #pied_de_page /*Bloc pied de page*/
@@ -546,7 +553,12 @@ h2
 	padding-left: 60px;
 }
 
+
+.footer h2
+{
+	margin-bottom: -20px;}
+
 .footer p
 {
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
