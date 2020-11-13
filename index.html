@@ -11,13 +11,11 @@
 <body>
 	<div id="bloc_page">
 		<header>
-			<nav id="menu">
-				<ul>
-					<li><a href="#hebergements">Hébergements</a></li>
-					<li><a href="#activites">Activités</a></li>
-					<li><a href="#inscription"><strong>S'inscrire</strong></a></li>
-				</ul>
-			</nav>				
+			<div id="menu">
+				<div class="menu_heberg"><a href="#hebergements">Hébergements</a></div>
+				<div class="menu_activ"><a href="#activites">Activités</a></div>
+				<div class="inscription"><a href="#inscription"><strong>S'inscrire</strong></a></div>
+			</div>				
 		</header>
 
 		<div id="recherches">
@@ -25,11 +23,10 @@
 				<p>En plein centre ville ou en pleine nature</p>
 				<a href="map"><i class="fas fa-map-marker-alt fa-lg"></i></a>  
 				<input type="search" id ="champ_recherche"/>
-				<button id="rechercher">Rechercher</button>
+				<button id="rechercher">Rechercher</button><i class="fas fa-search"></i>
 		</div>
 				
 			<div id="filtres">
-				<nav>
 					<ul>
 						<span id="filt">Filtres</span>
 						<li><a href="#economique"><i class="fas fa-money-bill-wave"></i>Economique</a></li>
@@ -37,12 +34,11 @@
 						<li><a href="#romantique"><i class="fas fa-heart"></i>Romantique</a></li>
 						<li><a href="#animaux"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
 					</ul>
-				</nav>
 			</div>
 			<p id="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
 		
 	
-	<div id="container">	
+	<div class="container">	
 		
 		<div class="container1">	
 			<div class="bg-grey1">
@@ -92,10 +88,8 @@
 			
 		<div class="container2">
 			<div class="bg-grey2">
-				<div id="titre_et_fleche">
-				Les plus populaires
+				<h1>Les plus populaires</h1>
 				<a href="#"><span id=icone_fleche><i class="fas fa-chart-line"></i></span></a>
-				</div>
 			
 				<div id="populaires">						
 					<a href="hebergements/photos/populaires/soleil_du_matin.jpg">
