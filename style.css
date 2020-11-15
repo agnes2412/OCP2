@@ -74,29 +74,20 @@ body
 }
 }
 
-header /* Bloc en-tête avec logo */
-{
-	border: 2px solid red;
-	height: 80px;
-}
-
-@media (max-width: 575px){
-	header /* Bloc en-tête avec logo */
-{
-	height: 110px;
-}
-}
-
-#menu 
+header
 {
 	background-image: url("logo.png");
 	background-repeat: no-repeat;
 	background-size: 97px 45px;
 	border: 2px solid pink;
+}
+
+#menu 
+{
 	display: flex;
 	justify-content: flex-end;	
 	padding-top: 15px;	
-	height: 110px;
+	padding-bottom: 15px;
 }
 
 @media (max-width: 575px); (min-width: 320px) {
@@ -106,36 +97,33 @@ header /* Bloc en-tête avec logo */
 	justify-content: flex-start;	
 	flex-wrap: wrap-reverse;
 	padding-top: 15px;
-	padding-bottom: 15px;
-	height: 110px;
+	padding-bottom: 15px;	
 }
 }
 
 .menu_heberg
 {
-	padding-right: 64px;
-	padding-left: 17px;
+	margin-right: 70px;
 }
 
 @media (max-width: 575px){
 	.menu_heberg
 {
-	border: 2px solid blue;
 	margin-top: 60px;
+	margin-right: 140px;
 }
 }
 
 .menu_activ
 {
-	padding-right: 80px;
+	margin-right: 70px;
 }
 
 @media (max-width: 575px){
 	.menu_activ
 {
-	border: 2px solid blue;
 	margin-top: 60px;
-	margin-right: -50px;
+	margin-right: 0px;
 }
 }
 
@@ -144,10 +132,10 @@ header /* Bloc en-tête avec logo */
 	padding-right: 30px;
 }
 
-@media (max-width: 575px){
+@media (max-width: 575px) {
 	.inscription
 {
-	margin-right: -30px;
+	padding-right: 10px;
 }
 }
 
@@ -160,13 +148,18 @@ header /* Bloc en-tête avec logo */
 #recherches /*Bloc recherches*/
 {
 	border: 2px solid red;
-	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#recherches h1
+{
+	margin-bottom: -8px;
 }
 
 @media (max-width: 575px) {
-	#recherches /*Bloc recherches*/
+	#recherches p
 {
-	border: 2px solid red;
+	margin-bottom: 40px;
 }
 }
 
@@ -221,7 +214,7 @@ header /* Bloc en-tête avec logo */
 
 .fa-search
 {
-	color: white;
+	color: white;/*rend l'icone "recherche" invisible sur la page desktop*/
 }
 
 @media (max-width: 575px) {
@@ -237,25 +230,22 @@ header /* Bloc en-tête avec logo */
 #filtres /*bloc filtres*/
 {
 	border: 2px solid pink;
+	padding-top: 15px;
 }
 
 @media (max-width: 575px) {
 	#filtres /*bloc filtres*/
 {
 	position: relative;
-	font-weight: bold;
-	list-style-type: none;	
-	font-size: 1.1em;
 	border: 2px solid pink;
-	padding-top: 60px;
+	padding-top: 55px;
 }
 }
 
 #filt
 {
-	border: 2px solid pink;
 	position: absolute;
-	margin-top: 32px;
+	margin-top: 22px;
 	font-weight: bold;	
 	font-size: 1.1em;
 }
@@ -263,9 +253,8 @@ header /* Bloc en-tête avec logo */
 @media (max-width: 575px){
 	#filt
 {
-	border: 2px solid pink;
 	position: absolute;
-	margin-top: -30px;
+	margin-top: -32px;
 }
 }
 
@@ -275,6 +264,7 @@ header /* Bloc en-tête avec logo */
 	font-weight: bold;	
 	font-size: 1.1em;
 	border: 2px solid pink;
+	margin-top: 5px;
 }
 
 @media (max-width: 575px) {
@@ -282,7 +272,7 @@ header /* Bloc en-tête avec logo */
 {
 	list-style-type: none;
 	font-weight: bold;	
-	font-size: 1em;
+	font-size: 0.9em;
 	border: 2px solid pink;
 	margin-left: -60px;
 }
@@ -306,8 +296,6 @@ header /* Bloc en-tête avec logo */
 	padding-right: 20px;
 	margin-left: 20px;
 	margin-bottom: 12px;
-	margin-right: 10px;
-	font-size: 0.9em;
 }
 }
 
@@ -404,10 +392,7 @@ h2
 	font-weight: bold;
 }
 
-.container h1
-{
-	margin: 20px;
-}
+
 
 .container /*container du bloc hébergements et populaires*/
 {
@@ -429,6 +414,8 @@ h2
 
 .container1/*container du bloc hébergements et background grey*/
 {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	width: 900px;
 	border: 2px solid red;
 	background-color:#F2F2F2; 
@@ -439,7 +426,7 @@ h2
 {
 	.container1/*container du bloc hébergements et background grey*/
 {
-	width: 480px;
+
 	border: 2px solid red;
 	background-color: white; 
 	border-radius: 20px;
@@ -448,13 +435,13 @@ h2
 
 .container1 h1
 {
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 @media (max-width: 575px) {
 	.container1 h1
 {
-	padding-left: 40px;
+	margin-left: 25px;
 }
 }
 
@@ -465,6 +452,19 @@ h2
 	justify-content: center;
 	flex-wrap: wrap;
 	border: 2px solid pink;	
+}
+
+@media (max-width: 575px) {
+	#hebergements /*container du bloc parent hébergements*/
+{	
+	max-width: 575px
+	min-width: 320px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 2px solid pink;	
+}
 }
 
 
@@ -493,7 +493,7 @@ h2
 	height: 200px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 7px 7px 7px lightgrey;
+	box-shadow: 7px 7px 7px 7px lightgrey;
 	background-color: white;
 	margin: 20px;
 }
@@ -505,7 +505,7 @@ h2
 	height: 200px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 7px 7px 7px lightgrey;
+	box-shadow: 7px 7px 7px 7px lightgrey;
 	background-color: white;
 	margin: 20px;
 }
@@ -577,6 +577,7 @@ h2
 
 .container2/*container du bloc populaires et background grey*/
 {
+	padding-top: 20px;
 	width: 400px;
 	background-color:#F2F2F2; 
 	border-radius: 20px;
@@ -585,19 +586,21 @@ h2
 @media (max-width: 575px) {
 	.container2/*container du bloc populaires et background grey*/
 {
+	
 	width: 480px;
 	background-color:#F2F2F2; 
+	border-radius: 0;
 }
 }
 
 .container2 h1
-{ padding-left: 10px;
+{ padding-left: 30px;
  }
 
  @media (max-width: 575px)
  {
  	.container2 h1
-{ padding-left: 30px;
+{ margin-left: 25px;
  }
  }
 
@@ -641,7 +644,10 @@ h2
 @media (max-width: 575px)  {
 	#populaires/*container du bloc parent populaires*/
 {
+	max-width: 575px
+	min-width: 320px;
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
 	border: 2px solid pink;
@@ -668,7 +674,7 @@ h2
 	margin: 20px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 7px 7px 7px lightgrey;
+	box-shadow: 7px 7px 7px 7px lightgrey;
 	padding-right: 20px;	
 }
 
@@ -682,10 +688,11 @@ h2
 	margin: 20px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 7px 7px 7px lightgrey;
+	box-shadow: 7px 7px 7px 7px lightgrey;
 	padding-right: 20px;	
 }
  }
+
 .mise-en-forme_photo_popu/*mise en forme des photos dans les éléments "Les plus populaires"*/
 {
 	background-size: cover;	
@@ -731,6 +738,36 @@ h2
 .container3 /*container bloc activités*/
 {
 	border: 2px solid blue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media (max-width: 575px) {
+	.container3 /*container bloc activités*/
+{
+	border: 2px solid blue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+}
+
+.container3 h1
+{
+	padding-left: 0;
+}
+
+@media (max-width: 575px) {
+	.container3 h1
+{
+	margin-left: 55px;
+}
+}
+
+.mise-en-forme_activ: hover
+{
+	border: 1px solid grey;
 }
 
 .mise-en-forme_photo_activ
@@ -757,19 +794,24 @@ h2
 #activites /*élément parent*/
 {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	column-count: 4;
-	border: 2px solid red;
+	border: 2px solid pink;	
+	width: 100%;
+	margin: auto;
 }
 
-@media (575px) {
+@media ( max-width: 575px) {
 	#activites /*élément parent*/
 {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	border: 2px solid red;
+	border: 2px solid pink;	
+	max-width: 575px
+	min-width: 320px;
 }
 }
 
@@ -782,16 +824,16 @@ h2
 	flex-wrap: wrap;
 }
 
-@media (575px) {
+@media (max-width: 575px) {
 	.colonne1
 {
 	border: 2px solid pink;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 }
-
 
 .colonne2
 {
@@ -802,12 +844,13 @@ h2
 	flex-wrap: wrap;
 }
 
-@media (575px) {
+@media (max-width: 575px) {
 	.colonne2
 {
 	border: 2px solid pink;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 }
@@ -888,7 +931,7 @@ h2
 @media (max-width: 575px) {
 	.activite5
 {
-	background-image: url("activites/bonne_mere.jpg");
+	background-image: url("css/activites/bonne_mere.jpg");
 	width: 340px;
 	height: 135px;
 }
@@ -912,62 +955,59 @@ h2
 
 #pied_de_page /*Bloc pied de page*/
 {
-	width: 82%
-	margin: auto;
+	border: 2px solid black;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	column-count: 3;
+	flex-direction: row;
 	background-color: #F2F2F2;
-	margin-top: 40px;
-	padding-top: 40px;
+	padding: 50px;
+	margin: 40px 80px 40px 80px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
 	#pied_de_page /*Bloc pied de page*/
 {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
-	padding-top: 20px;
-	padding-left: 30px;
-	padding-bottom: 50px;
 	border: 2px solid black;
 	margin-left: 0px;
 	margin-right: 0px;
 }
 }
 
-
 .footer
 {
-	padding-right: 200px;
-	padding-left: 60px;
+	padding-right: 270px;
 }
 
 @media (max-width: 575px) {
 	.footer
 {
-	padding-right: 200px;
-	padding-left: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
 }
 }
 
 .footer h2
 {
 	border: 2px solid pink;
-	padding-bottom: 8px;}
+	margin-bottom: -20px;
+}
 
 @media (max-width: 575px)  {
 	.footer h2
 {
 	border: 2px solid pink;
 }
+}
 
 .footer p
 {
-	margin-bottom: 7px;
+	margin-bottom: -10px;
 }
 
 @media ()
