@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<meta name="viewport" content="width=320" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Pour créer un site web réactif sur tous les appareils-->
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script><!--Pour intégrer des icônes Font-awesone-->
 	<title>Reservia</title>
@@ -10,16 +11,19 @@
 
 <body>
 	<div id="bloc_page">
-		<header>
-			<div id="menu">
-				<div class="menu_heberg"><a href="#hebergements">Hébergements</a></div>
-				<div class="menu_activ"><a href="#activites">Activités</a></div>
-				<div class="inscription"><a href="#inscription"><strong>S'inscrire</strong></a></div>
-			</div>				
+		<div id="tete_et_corps">
+		<header>		
+				<img src="logo.png" alt="logo_reservia" id="logo">
+			<div id="menu">		
+				<div class="menu_heberg"><a href="#hebergements" >Hébergements</a></div>
+				<div class="menu_act"><a href="#activites" >Activités</a></div>
+			</div>		
+				<span class="inscription"><a href="#inscription"><strong>S'inscrire</strong></a></span>
+						
 		</header>
 
 		<div id="recherches">
-			<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
 				<a href="map"><i class="fas fa-map-marker-alt fa-lg"></i></a>  
 				<input type="search" id ="champ_recherche"/>
@@ -35,7 +39,7 @@
 					<li><a href="#animaux"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
 				</ul>
 			</div>
-			<p id="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+			<span><i class="fas fa-info"></i><p id="info">Plus de 500 logements sont disponibles dans cette ville</p>
 		
 	
 	<div class="container">	
@@ -90,18 +94,18 @@
 			
 				<div id="populaires">						
 					<a href="hebergements/photos/populaires/soleil_du_matin.jpg">
-						<div class="hover mise-en-forme_popu">
+						<div class="hover mise-en-forme_popu pop1">
 						<div class="populaire1 mise-en-forme_photo_popu"></div><h2>Hôtel Le soleil du matin</h2>
 						<p>Nuit à partir de 128&euro;</p>
 						<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fa fa-star blue"></i></p></div></a>							
 					<a href="hebergements/photos/populaires/coeur_de_leau.jpg">
-						<div class="hover mise-en-forme_popu">
+						<div class="hover mise-en-forme_popu pop2">
 						<div class="populaire2 mise-en-forme_photo_popu"></div>
 						<h2>Au coeur de l'eau Chambres d'hôtes</h2>
 						<p>Nuit à partir de 71&euro;</p>
 						<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star grey"></i></p></div></a>							
 					<a href="hebergements/photos/populaires/bleu_et_blanc.jpg">
-						<div class="hover mise-en-forme_popu">
+						<div class="hover mise-en-forme_popu pop3">
 						<div class="populaire3 mise-en-forme_photo_popu"></div>
 						<h2>Hôtel Tout bleu et blanc</h2>
 						<p>Nuit à partir de 68&euro;</p>
@@ -148,8 +152,8 @@
 				</div>					
 			</div>		
 		</div>		
-					
-	</div>			
+	</div>				
+				
 			
 		
 		<footer>
@@ -172,6 +176,7 @@
 				</div>
 			</div>	
 		</footer>
+	</div>	
 	
 	</body>
 </html>
