@@ -940,32 +940,32 @@ h2
 
 .hebergement1
 {
-	background-image: url(../img/"css/photos/cannebiere.jpg");
+	background-image: url("../img/photos/cannebiere.jpg");
 }
 
 .hebergement2
 {
-	background-image: url(../img/"css/photos/port.jpg");
+	background-image: url("../img/photos/port.jpg");
 }
 
 .hebergement3
 {
-	background-image: url(../img/"css/photos/mouettes.jpg");
+	background-image: url("../img/photos/mouettes.jpg");
 }
 
 .hebergement4
 {
-	background-image: url(../img/"css/photos/la_mer.jpg");
+	background-image: url("../img/photos/la_mer.jpg");
 }
 
 .hebergement5
 {
-	background-image: url(../img/"css/photos/panier.jpg");
+	background-image: url("../img/photos/panier.jpg");
 }
 
 .hebergement6
 {
-	background-image: url(../img/"css/photos/amina.jpg");
+	background-image: url("../img/photos/amina.jpg");
 }
 
 .aff_plus
@@ -1580,18 +1580,18 @@ h2
 
 .populaire1
 {
-	background-image: url(../img/"css/populaires/soleil_du_matin.jpg"); 
+	background-image: url("../img/populaires/soleil_du_matin.jpg"); 
 }
 
 
 .populaire2 
 {
-	background-image: url(../img/"css/populaires/coeur_de_leau.jpg");
+	background-image: url("../img/populaires/coeur_de_leau.jpg");
 }
 
 .populaire3
 {
-	background-image: url(../img/"css/populaires/bleu_et_blanc.jpg");
+	background-image: url("../img/populaires/bleu_et_blanc.jpg");
 }
 
 .fa-star
@@ -1804,7 +1804,7 @@ h2
 
 .activite1
 {
-	background-image: url(../img/"activites/vieux_port.jpg");
+	background-image: url("../img/activites/vieux_port.jpg");
 	width: 300px;
 	height: 380px;
 }
@@ -1812,7 +1812,7 @@ h2
 @media (max-width: 1475px) {
 	.activite1
 {
-	background-image: url(../img/"activites/vieux_port.jpg");
+	background-image: url("../img/activites/vieux_port.jpg");
 	width: 270px;
 	height: 340px;
 }
@@ -1821,7 +1821,7 @@ h2
 @media (max-width: 1024px) {
 	.activite1
 {
-	background-image: url(../img/"activites/vieux_port.jpg");
+	background-image: url("../img/activites/vieux_port.jpg");
 	width: 280px;
 	height: 340px;
 }
@@ -1830,7 +1830,7 @@ h2
 @media (max-width: 768px) {
 	.activite1
 {
-	background-image: url(../img/"activites/vieux_port.jpg");
+	background-image: url("../img/activites/vieux_port.jpg");
 	width: 300px;
 	height: 340px;
 }
@@ -1839,7 +1839,7 @@ h2
 @media (max-width: 575px) {
 	.activite1
 {
-	background-image: url(../img/"activites/vieux_port.jpg");
+	background-image: url("../img/activites/vieux_port.jpg");
 	width: 320px;
 	height: 135px;
 }	
@@ -1848,7 +1848,7 @@ h2
 @media (max-width: 350px) {
 	.activite1
 {
-	background-image: url(../img/"activites/vieux_port.jpg");
+	background-image: url("../img/activites/vieux_port.jpg");
 	width: 285px;
 	height: 135px;
 }	
@@ -1910,7 +1910,7 @@ h2
 
 .activite3
 {
-	background-image: url(../img/"activites/iles_frioul.jpg");
+	background-image: url("../img/activites/iles_frioul.jpg");
 	width: 300px;
 	height: 115px;
 }
@@ -1918,7 +1918,7 @@ h2
 @media (max-width: 1475px) {
 	.activite3
 {
-	background-image: url(../img/"activites/iles_frioul.jpg");
+	background-image: url("../img/activites/iles_frioul.jpg");
 	width: 270px;
 	height: 135px;
 }
@@ -1927,7 +1927,7 @@ h2
 @media (max-width: 1024px) {
 	.activite3
 {
-	background-image: url(../img/"activites/iles_frioul.jpg");
+	background-image: url("../img/activites/iles_frioul.jpg");
 	width: 280px;
 	height: 90px;
 }
@@ -1937,7 +1937,7 @@ h2
 @media (max-width: 768px) {
 	.activite3
 {
-	background-image: url(../img/"activites/iles_frioul.jpg");
+	background-image: url("../img/activites/iles_frioul.jpg");
 	width: 320px;
 	height: 120px;
 }
@@ -1946,7 +1946,7 @@ h2
 @media (max-width: 575px) {
 	.activite3
 {
-	background-image: url(../img/"activites/iles_frioul.jpg");
+	background-image: url("../img/activites/iles_frioul.jpg");
 	width: 320px;
 	height: 135px;
 }
@@ -1956,7 +1956,7 @@ h2
 
 .activite3
 {
-	background-image: url(../img/"activites/iles_frioul.jpg");
+	background-image: url("../img/activites/iles_frioul.jpg");
 	width: 285px;
 	height: 135px;
 }
@@ -1964,7 +1964,7 @@ h2
 
 .activite4
 {
-	background-image: url(../img/"activites/calanques.jpg");
+	background-image: url("../img/activites/calanques.jpg");
 	width: 300px;
 	height: 380px;
 }
@@ -1972,7 +1972,7 @@ h2
 @media (max-width: 1475px) {
 	.activite4
 {
-	background-image: url(../img/"activites/calanques.jpg");
+	background-image: url("../img/activites/calanques.jpg");
 	width: 270px;
 	height: 340px;
 }
@@ -1981,7 +1981,7 @@ h2
 @media (max-width: 1024px){
 	.activite4
 {
-	background-image: url(../img/"activites/calanques.jpg");
+	background-image: url("../img/activites/calanques.jpg");
 	width: 270px;
 	height: 340px;
 }
@@ -1990,7 +1990,7 @@ h2
 @media (max-width: 768px){
 	.activite4
 {
-	background-image: url(../img/"activites/calanques.jpg");
+	background-image: url("../img/activites/calanques.jpg");
 	width: 300px;
 	height: 340px;
 }
@@ -2000,7 +2000,7 @@ h2
 @media (max-width: 575px) {
 	.activite4
 {
-	background-image: url(../img/"activites/calanques.jpg");
+	background-image: url("../img/activites/calanques.jpg");
 	width: 320px;
 	height: 135px;
 }
@@ -2010,7 +2010,7 @@ h2
 
 .activite4
 {
-	background-image: url(../img/"activites/calanques.jpg");
+	background-image: url("../img/activites/calanques.jpg");
 	width: 285px;
 	height: 135px;
 }
@@ -2018,7 +2018,7 @@ h2
 
 .activite5
 {
-	background-image: url(../img/"activites/bonne_mere.jpg");
+	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 300px;
 	height: 130px;	
 }
@@ -2026,7 +2026,7 @@ h2
 @media (max-width: 1475px) {
 	.activite5
 {
-	background-image: url(../img/"activites/bonne_mere.jpg");
+	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 270px;
 	height: 135px;	
 }
@@ -2035,7 +2035,7 @@ h2
 @media (max-width: 1024px) {
 	.activite5
 {
-	background-image: url(../img/"activites/bonne_mere.jpg");
+	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 410px;
 	height: 170px;	
 }
@@ -2044,7 +2044,7 @@ h2
 @media (max-width: 768px) {
 	.activite5
 {
-	background-image: url(../img/"activites/bonne_mere.jpg");
+	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 320px;
 	height: 150px;
 }
@@ -2053,7 +2053,7 @@ h2
 @media (max-width: 575px) {
 	.activite5
 {
-	background-image: url(../img/"activites/bonne_mere.jpg");
+	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 320px;
 	height: 135px;
 }
@@ -2063,7 +2063,7 @@ h2
 
 .activite5
 {
-	background-image: url(../img/"activites/bonne_mere.jpg");
+	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 285px;
 	height: 135px;
 }
