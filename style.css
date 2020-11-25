@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'raleway';
-    src: url("Raleway/Raleway-VariableFont_wght.ttf");
+    src: url("../Raleway/Raleway-VariableFont_wght.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -13,45 +13,6 @@ body
 
 * {
   box-sizing: border-box;
-}
-
-/*Pour les téléphones mobiles*/
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-  border: 1px solid green;
-}
-
-/*Pour les tablettes*/
-@media only screen and (min-width: 600px) {
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
-}
-
-/*Pour ordinateurs*/
-@media only screen and (min-width: 768px) {
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 }
 
 
@@ -979,32 +940,32 @@ h2
 
 .hebergement1
 {
-	background-image: url("css/photos/cannebiere.jpg");
+	background-image: url(../img/"css/photos/cannebiere.jpg");
 }
 
 .hebergement2
 {
-	background-image: url("css/photos/port.jpg");
+	background-image: url(../img/"css/photos/port.jpg");
 }
 
 .hebergement3
 {
-	background-image: url("css/photos/mouettes.jpg");
+	background-image: url(../img/"css/photos/mouettes.jpg");
 }
 
 .hebergement4
 {
-	background-image: url("css/photos/la_mer.jpg");
+	background-image: url(../img/"css/photos/la_mer.jpg");
 }
 
 .hebergement5
 {
-	background-image: url("css/photos/panier.jpg");
+	background-image: url(../img/"css/photos/panier.jpg");
 }
 
 .hebergement6
 {
-	background-image: url("css/photos/amina.jpg");
+	background-image: url(../img/"css/photos/amina.jpg");
 }
 
 .aff_plus
@@ -1619,18 +1580,18 @@ h2
 
 .populaire1
 {
-	background-image: url("css/populaires/soleil_du_matin.jpg"); 
+	background-image: url(../img/"css/populaires/soleil_du_matin.jpg"); 
 }
 
 
 .populaire2 
 {
-	background-image: url("css/populaires/coeur_de_leau.jpg");
+	background-image: url(../img/"css/populaires/coeur_de_leau.jpg");
 }
 
 .populaire3
 {
-	background-image: url("css/populaires/bleu_et_blanc.jpg");
+	background-image: url(../img/"css/populaires/bleu_et_blanc.jpg");
 }
 
 .fa-star
@@ -1843,7 +1804,7 @@ h2
 
 .activite1
 {
-	background-image: url("activites/vieux_port.jpg");
+	background-image: url(../img/"activites/vieux_port.jpg");
 	width: 300px;
 	height: 380px;
 }
@@ -1851,7 +1812,7 @@ h2
 @media (max-width: 1475px) {
 	.activite1
 {
-	background-image: url("activites/vieux_port.jpg");
+	background-image: url(../img/"activites/vieux_port.jpg");
 	width: 270px;
 	height: 340px;
 }
@@ -1860,7 +1821,7 @@ h2
 @media (max-width: 1024px) {
 	.activite1
 {
-	background-image: url("activites/vieux_port.jpg");
+	background-image: url(../img/"activites/vieux_port.jpg");
 	width: 280px;
 	height: 340px;
 }
@@ -1869,7 +1830,7 @@ h2
 @media (max-width: 768px) {
 	.activite1
 {
-	background-image: url("activites/vieux_port.jpg");
+	background-image: url(../img/"activites/vieux_port.jpg");
 	width: 300px;
 	height: 340px;
 }
@@ -1878,7 +1839,7 @@ h2
 @media (max-width: 575px) {
 	.activite1
 {
-	background-image: url("activites/vieux_port.jpg");
+	background-image: url(../img/"activites/vieux_port.jpg");
 	width: 320px;
 	height: 135px;
 }	
@@ -1887,7 +1848,7 @@ h2
 @media (max-width: 350px) {
 	.activite1
 {
-	background-image: url("activites/vieux_port.jpg");
+	background-image: url(../img/"activites/vieux_port.jpg");
 	width: 285px;
 	height: 135px;
 }	
@@ -1895,7 +1856,7 @@ h2
 
 .activite2
 {
-	background-image: url(activites/pomegues.jpg);
+	background-image: url(../img/activites/pomegues.jpg);
 	width: 300px;
 	height: 170px;
 }
@@ -1903,7 +1864,7 @@ h2
 @media (max-width: 1475px) {
 	.activite2
 {
-	background-image: url(activites/pomegues.jpg);
+	background-image: url(../img/activites/pomegues.jpg);
 	width: 270px;
 	height: 135px;
 }
@@ -1912,7 +1873,7 @@ h2
 @media (max-width: 1024px) {
 	.activite2
 {
-	background-image: url(activites/pomegues.jpg);
+	background-image: url(../img/activites/pomegues.jpg);
 	width: 280px;
 	height: 150px;
 }
@@ -1921,7 +1882,7 @@ h2
 @media (max-width: 768px) {
 	.activite2
 {
-	background-image: url(activites/pomegues.jpg);
+	background-image: url(../img/activites/pomegues.jpg);
 	width: 320px;
 	height: 150px;
 }
@@ -1931,7 +1892,7 @@ h2
 @media (max-width: 575px) {
 	.activite2
 {
-	background-image: url(activites/pomegues.jpg);
+	background-image: url(../img/activites/pomegues.jpg);
 	width: 320px;
 	height: 135px;
 }
@@ -1941,7 +1902,7 @@ h2
 
 .activite2
 {
-	background-image: url(activites/pomegues.jpg);
+	background-image: url(../img/activites/pomegues.jpg);
 	width: 285px;
 	height: 135px;
 }
@@ -1949,7 +1910,7 @@ h2
 
 .activite3
 {
-	background-image: url("activites/iles_frioul.jpg");
+	background-image: url(../img/"activites/iles_frioul.jpg");
 	width: 300px;
 	height: 115px;
 }
@@ -1957,7 +1918,7 @@ h2
 @media (max-width: 1475px) {
 	.activite3
 {
-	background-image: url("activites/iles_frioul.jpg");
+	background-image: url(../img/"activites/iles_frioul.jpg");
 	width: 270px;
 	height: 135px;
 }
@@ -1966,7 +1927,7 @@ h2
 @media (max-width: 1024px) {
 	.activite3
 {
-	background-image: url("activites/iles_frioul.jpg");
+	background-image: url(../img/"activites/iles_frioul.jpg");
 	width: 280px;
 	height: 90px;
 }
@@ -1976,7 +1937,7 @@ h2
 @media (max-width: 768px) {
 	.activite3
 {
-	background-image: url("activites/iles_frioul.jpg");
+	background-image: url(../img/"activites/iles_frioul.jpg");
 	width: 320px;
 	height: 120px;
 }
@@ -1985,7 +1946,7 @@ h2
 @media (max-width: 575px) {
 	.activite3
 {
-	background-image: url("activites/iles_frioul.jpg");
+	background-image: url(../img/"activites/iles_frioul.jpg");
 	width: 320px;
 	height: 135px;
 }
@@ -1995,7 +1956,7 @@ h2
 
 .activite3
 {
-	background-image: url("activites/iles_frioul.jpg");
+	background-image: url(../img/"activites/iles_frioul.jpg");
 	width: 285px;
 	height: 135px;
 }
@@ -2003,7 +1964,7 @@ h2
 
 .activite4
 {
-	background-image: url("activites/calanques.jpg");
+	background-image: url(../img/"activites/calanques.jpg");
 	width: 300px;
 	height: 380px;
 }
@@ -2011,7 +1972,7 @@ h2
 @media (max-width: 1475px) {
 	.activite4
 {
-	background-image: url("activites/calanques.jpg");
+	background-image: url(../img/"activites/calanques.jpg");
 	width: 270px;
 	height: 340px;
 }
@@ -2020,7 +1981,7 @@ h2
 @media (max-width: 1024px){
 	.activite4
 {
-	background-image: url("activites/calanques.jpg");
+	background-image: url(../img/"activites/calanques.jpg");
 	width: 270px;
 	height: 340px;
 }
@@ -2029,7 +1990,7 @@ h2
 @media (max-width: 768px){
 	.activite4
 {
-	background-image: url("activites/calanques.jpg");
+	background-image: url(../img/"activites/calanques.jpg");
 	width: 300px;
 	height: 340px;
 }
@@ -2039,7 +2000,7 @@ h2
 @media (max-width: 575px) {
 	.activite4
 {
-	background-image: url("activites/calanques.jpg");
+	background-image: url(../img/"activites/calanques.jpg");
 	width: 320px;
 	height: 135px;
 }
@@ -2049,7 +2010,7 @@ h2
 
 .activite4
 {
-	background-image: url("activites/calanques.jpg");
+	background-image: url(../img/"activites/calanques.jpg");
 	width: 285px;
 	height: 135px;
 }
@@ -2057,7 +2018,7 @@ h2
 
 .activite5
 {
-	background-image: url("css/activites/bonne_mere.jpg");
+	background-image: url(../img/"activites/bonne_mere.jpg");
 	width: 300px;
 	height: 130px;	
 }
@@ -2065,7 +2026,7 @@ h2
 @media (max-width: 1475px) {
 	.activite5
 {
-	background-image: url("css/activites/bonne_mere.jpg");
+	background-image: url(../img/"activites/bonne_mere.jpg");
 	width: 270px;
 	height: 135px;	
 }
@@ -2074,7 +2035,7 @@ h2
 @media (max-width: 1024px) {
 	.activite5
 {
-	background-image: url("css/activites/bonne_mere.jpg");
+	background-image: url(../img/"activites/bonne_mere.jpg");
 	width: 410px;
 	height: 170px;	
 }
@@ -2083,7 +2044,7 @@ h2
 @media (max-width: 768px) {
 	.activite5
 {
-	background-image: url("css/activites/bonne_mere.jpg");
+	background-image: url(../img/"activites/bonne_mere.jpg");
 	width: 320px;
 	height: 150px;
 }
@@ -2092,7 +2053,7 @@ h2
 @media (max-width: 575px) {
 	.activite5
 {
-	background-image: url("css/activites/bonne_mere.jpg");
+	background-image: url(../img/"activites/bonne_mere.jpg");
 	width: 320px;
 	height: 135px;
 }
@@ -2102,7 +2063,7 @@ h2
 
 .activite5
 {
-	background-image: url("css/activites/bonne_mere.jpg");
+	background-image: url(../img/"activites/bonne_mere.jpg");
 	width: 285px;
 	height: 135px;
 }
@@ -2111,7 +2072,7 @@ h2
 
 .activite6
 {
-	background-image: url(activites/longchamp.jpg);
+	background-image: url(../img/activites/longchamp.jpg);
 	width: 300px;
 	height: 150px;
 }
@@ -2120,7 +2081,7 @@ h2
 @media (max-width: 1475px) {
 	.activite6
 {
-	background-image: url(activites/longchamp.jpg);
+	background-image: url(../img/activites/longchamp.jpg);
 	width: 270px;
 	height: 135px;	
 }
@@ -2129,7 +2090,7 @@ h2
 @media (max-width: 1024px) {
 	.activite6
 {
-	background-image: url(activites/longchamp.jpg);
+	background-image: url(../img/activites/longchamp.jpg);
 	width: 410px;
 	height: 170px;
 }
@@ -2138,7 +2099,7 @@ h2
 @media (max-width: 768px) {
 	.activite6
 {
-	background-image: url(activites/longchamp.jpg);
+	background-image: url(../img/activites/longchamp.jpg);
 	width: 320px;
 	height: 120px;
 }
@@ -2148,7 +2109,7 @@ h2
 @media (max-width: 575px) {
 	.activite6
 {
-	background-image: url(activites/longchamp.jpg);
+	background-image: url(../img/activites/longchamp.jpg);
 	width: 320px;
 	height: 135px;
 }
@@ -2157,7 +2118,7 @@ h2
 
 .activite6
 {
-	background-image: url(activites/longchamp.jpg);
+	background-image: url(../img/activites/longchamp.jpg);
 	width: 285px;
 	height: 135px;
 }
