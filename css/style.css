@@ -18,7 +18,9 @@ body
 
 #bloc_page
 {	
+	max-width: 1550px;
 	width: 100%;
+	margin: auto;
 }
 
 #tete_et_corps
@@ -84,7 +86,7 @@ header
 {
 	width: 97px;
 	height: 45px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 }
 
@@ -93,7 +95,7 @@ header
 {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: -72px;
+	margin-top: -68px;
 	padding-bottom: 10px;
 }
 
@@ -110,7 +112,6 @@ header
 .menu_heberg
 {
 	padding: 35px 35px 0px 35px;
-	border-top: 3px solid #F2F2F2;
 }
 
 @media (max-width: 575px) {
@@ -138,7 +139,7 @@ header
 {
 	border-top: none;
 	margin-right: 0px;
-	padding: 0 40px 13px 10px;
+	padding: 0 40px 13px 3px;
 	border-bottom: 3px solid #F2F2F2;
 }
 }
@@ -151,6 +152,15 @@ header
 	margin-right: -35px;
 	margin-left: -35px;
 }
+
+.menu_heberg a:active /*Apparence lorsque l'on clique sur le lien*/
+{
+	color: #0065FC;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+}
+
 
 @media (max-width: 575px){
 .menu_heberg a:hover /*Apparence au survol des liens*/
@@ -165,7 +175,6 @@ header
 .menu_act
 {
 	padding: 35px 35px 0px 35px;
-	border-top: 3px solid #F2F2F2;
 	margin-right: 120px;
 }
 
@@ -199,14 +208,25 @@ header
 	margin-left: -35px;
 }
 
+.menu_act a:active /*Apparence lorsque l'on clique sur le lien*/
+{
+	color: #0065FC;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+}
 
-@media (max-width: 768px){
+
+
+@media (max-width: 575px){
 .menu_act a:hover /*Apparence au survol des liens*/
 {
 	border-top: none;
 	border-bottom: 3px solid #0065FC;
-	padding: 0 15px 13px 15px;
+	padding: 0px 0px 13px 0px;
 	color: 	#0065FC;
+	margin-right: -35px;
+	margin-left: -35px;
 }
 }
 
@@ -215,6 +235,15 @@ header
 	position: absolute;
 	right: 15px;
 	top: 35px;
+}
+
+.inscription a:active /*Apparence lorsque l'on clique sur le lien*/
+{
+	color: blue;
+	background:  #F2F2F2;
+	text-decoration: none;
+	font-size: 1em;
+	padding: 4px;
 }
 
 @media (max-width: 575px) {
@@ -235,7 +264,7 @@ header
 	#recherches /*Bloc recherches*/
 {
 	padding-top: 0px;
-	margin-left: 10px;
+	margin-left: 5px;
 	margin-right: 10px;
 }
 }
@@ -248,7 +277,7 @@ header
 @media (max-width: 768px) {
 	#recherches p
 {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 }
 
@@ -375,7 +404,7 @@ header
 	#filtres /*bloc filtres*/
 {
 	position: relative;
-	padding-top: 20px;
+	padding-top: 40px;
 	margin-bottom: 20px;
 }
 }
@@ -408,7 +437,7 @@ header
 	#filt
 {
 	position: absolute;
-	margin-top: -15px;
+	margin-top: -30px;
 	margin-left: 10px;
 }
 }
@@ -424,12 +453,9 @@ header
 @media (max-width:1024px) {
 	#filtres ul
 {
+	display: block;
+	padding-left: 0px;
 	list-style-type: none;
-	margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
 	font-weight: bold;	
 	font-size: 1em;
 }
@@ -440,11 +466,7 @@ header
 {
     display: block;
     list-style-type: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-left: 0px;
 	list-style-type: none;
 	font-weight: bold;	
 	font-size: 0.9em;
@@ -456,11 +478,7 @@ header
 {
     display: block;
     list-style-type: none;
-    margin-block-start: 1.5em;
-    margin-block-end: 1em;
-    margin-inline-start: 10px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-left: 5px;
 	list-style-type: none;
 	font-weight: bold;	
 	font-size: 0.9em;
@@ -484,7 +502,7 @@ header
 	display: inline-flex;
 	border: 2px solid lightgrey;
 	border-radius: 30px 30px 30px 30px;
-	margin-right: 10px;
+	margin-right: 20px;
 	margin-bottom: 12px;
 }
 }
@@ -506,6 +524,13 @@ header
 {
   	color:#0065FC;
 	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#filtres a:active /*Apparence lorsque l'on clique sur le lien*/
+{
+	color: grey;
+	text-decoration: none;
 	font-size: 1.1em;
 }
 
@@ -564,14 +589,37 @@ header
 	border: 1px solid #DEEBFF;
 	border-radius: 50%;
 	padding: 6px 10px 6px 10px;	
+	margin-right: 12px;
+	margin-top: -10px;
 }
 
 #info 
 {
-	margin-left: 40px;
-	margin-top: -23px;
-
+	margin-top: 30px;
 }
+
+@media (max-width: 575px) {
+	#info 
+{
+	margin-left: 5px;
+	margin-top: 30px;
+}
+}
+
+#texte_info
+{
+	margin-top: 10px;
+}
+
+@media (max-width: 575px) {
+	#texte_info
+{
+	display: block;
+	margin-top: -23px;
+	margin-left: 40px;
+}
+}
+
 
 strong
 {
@@ -771,6 +819,16 @@ h2
 {
 	margin-top: 7px;
 	margin-left: 10px;	
+	margin-bottom: 18px;
+}
+}
+
+@media (max-width: 575px) {
+	#hebergements h2
+{
+	margin-top: 7px;
+	margin-left: 10px;	
+	margin-bottom: 10px;
 }
 }
 
@@ -785,7 +843,7 @@ h2
 @media (max-width: 768px) {
 	#hebergements p 
 {
-	margin-top: -10px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
+	margin-top: -6px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
 	margin-left: 10px;
 	font-size: 0.9em;
 }
@@ -854,8 +912,9 @@ h2
 	height: 200px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #e3e3e3;
+	box-shadow: 4px 4px 4px #F2F2F2.;
 	background-color: white;
+	margin: 5px;
 }
 }
 
@@ -866,7 +925,7 @@ h2
 	height: 205px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #e3e3e3;
+	box-shadow: 4px 4px 4px #F2F2F2.;
 	background-color: white;
 }
 }
@@ -1222,24 +1281,13 @@ h2
 
 #populaires h2
 {
-	word-break: break-word;
 	margin-left: 10px;
-}
-
-@media (max-width:1575px) {
-	#populaires h2
-{
-	word-break: break-word;
-	margin-left: 10px;
-}
 }
 
 @media (max-width:1450px) {
 	#populaires h2
 {
-	word-break: break-word;
 	margin-left: 10px;
-	padding-top: 15px;
 }
 }
 
@@ -1247,9 +1295,7 @@ h2
 	#populaires h2
 {
 	font-size: 1em;
-	word-break: break-word;
-	padding-top: 10px;
-	margin-bottom: 4px;
+	margin-bottom: 10px;
 	margin-left: 4px;
 }
 }
@@ -1258,10 +1304,9 @@ h2
 	#populaires h2
 {
 	font-size: 1em;
-	word-break: break-word;
-	padding-top: 0px;
-	margin-bottom: 4px;
-	margin-left: 4px;
+	margin-top: 5px;
+	margin-left: 4px;	
+	
 }
 }
 
@@ -1273,20 +1318,19 @@ h2
 	margin-bottom: 4px;
 	margin-left: 8px;
 	margin-right: 50px;
+	margin-top: 5px;
 }
 }
 
 @media (max-width: 575px) {
 	#populaires h2
 { 
-	padding-top: 0px;
-	margin-bottom: 4px;
+	padding-top: 3px;
+	margin-bottom: 8px;
 	margin-left: 8px;
 	margin-right: 5px;
 }
 }
-
-
 
 #populaires p
 {
@@ -1319,7 +1363,7 @@ h2
 {
 	font-size: 0.9em;
 	margin-top: 0px;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
 	margin-left: 4px;
 }
 }
@@ -1329,7 +1373,7 @@ h2
 {
 	font-size: 0.9em;
 	margin-top: 0px;
-	margin-bottom: 6px;
+	margin-bottom: 4px;
 	margin-left: 4px;
 }
 }
@@ -1350,7 +1394,7 @@ h2
 {
 	font-size: 0.9em;
 	margin-top: 0px;
-	margin-bottom: 35px;
+	margin-bottom: 38px;
 	margin-left: 4px;
 }
 }
@@ -1360,7 +1404,7 @@ h2
 {
 	font-size: 0.9em;
 	margin-top: 0px;
-	margin-bottom: 16px;
+	margin-bottom: 25px;
 	margin-left: 4px;
 }
 }
@@ -1453,10 +1497,10 @@ h2
 	background-color: white;
 	width: 320px;
 	height: 145px;
-	margin: 15px;
+	margin: 5px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 5px 5px 5px #e3e3e3;
+	box-shadow: 5px 5px 5px #F2F2F2.;
 	padding-right: 20px;	
 }
 } 
@@ -1465,12 +1509,12 @@ h2
 	.mise-en-forme_popu/*mise en forme des éléments "Les plus populaires"*/
 {
 	background-color: white;
-	width: 285px;
+	width: 282px;
 	height: 135px;
 	margin: 15px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 5px 5px 5px #e3e3e3;
+	box-shadow: 5px 5px 5px #F2F2F2.;
 	padding-right: 10px;	
 }
 }
@@ -1518,6 +1562,7 @@ h2
 	{
 	background-size: cover;	
 	background-position: 100%;	
+	float: left;
 	width: 275px;
 	height: 115px;
 	border-radius: 16px 16px 0 0;
@@ -1532,6 +1577,7 @@ h2
 	background-position: 100%;	
 	width: 275px;
 	height: 115px;
+	float: none;
 	border-radius: 16px 16px 0 0;
 	margin-right: 0;
 }
@@ -1657,8 +1703,7 @@ h2
 {
 	background-color: white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #F2F2F2;
-	border: 2px solid #F2F2F2;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	margin-bottom: 5px;
 }
 
@@ -1667,8 +1712,7 @@ h2
 {
 	background-color: white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #F2F2F2;
-	border: 2px solid #F2F2F2;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	margin: 5px;
 }
 }
@@ -1678,8 +1722,7 @@ h2
 {
 	background-color: white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #F2F2F2;
-	border: 2px solid #F2F2F2;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	margin: 15px;
 }
 }
@@ -1689,8 +1732,7 @@ h2
 {
 	background-color: white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #F2F2F2;
-	border: 2px solid #F2F2F2;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	margin: 5px;
 }
 }
@@ -1700,6 +1742,7 @@ h2
 { 
 	padding-left: 15px; 
 	padding-top: 5px;
+	padding-bottom: 15px;
 }
 
 #activites /*élément parent*/
@@ -1784,9 +1827,10 @@ h2
 	
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin: 10px;
 }
 }
 
@@ -1874,8 +1918,8 @@ h2
 	.activite2
 {
 	background-image: url(../img/activites/pomegues.jpg);
-	width: 280px;
-	height: 150px;
+	width: 290px;
+	height: 160px;
 }
 }
 
@@ -1928,8 +1972,8 @@ h2
 	.activite3
 {
 	background-image: url("../img/activites/iles_frioul.jpg");
-	width: 280px;
-	height: 90px;
+	width: 290px;
+	height: 100px;
 }
 }
 
@@ -2036,7 +2080,7 @@ h2
 	.activite5
 {
 	background-image: url("../img/activites/bonne_mere.jpg");
-	width: 410px;
+	width: 430px;
 	height: 170px;	
 }
 }
@@ -2046,7 +2090,7 @@ h2
 {
 	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 320px;
-	height: 150px;
+	height: 145px;
 }
 }
 
@@ -2091,7 +2135,7 @@ h2
 	.activite6
 {
 	background-image: url(../img/activites/longchamp.jpg);
-	width: 410px;
+	width: 430px;
 	height: 170px;
 }
 }
@@ -2101,7 +2145,7 @@ h2
 {
 	background-image: url(../img/activites/longchamp.jpg);
 	width: 320px;
-	height: 120px;
+	height: 115px;
 }
 }
 
@@ -2127,7 +2171,7 @@ h2
 
 footer
 {
-	margin: 30px 25px 30px 25px;
+	margin: 30px 45px 30px 45px;
 	padding: 30px 260px 50px 40px;
 	background-color: #F2F2F2;
 }
@@ -2136,7 +2180,7 @@ footer
 	footer
 {
 	margin: 30px 0 30px 0px;
-	padding: 30px 20px 30px 20px;
+	padding: 30px 20px 30px 30px;
 	background-color: #F2F2F2;
 }
 }
@@ -2145,7 +2189,7 @@ footer
 	footer
 {
 	margin: 30px 0 30px 0px;
-	padding: 30px 0px 10px 20px;
+	padding: 30px 10px 10px 30px;
 	background-color: #F2F2F2;
 }
 }
@@ -2164,7 +2208,7 @@ footer
 	footer
 {
 	margin: 10px 0 0px 0px;
-	padding: 0px 50px 0px 10px;
+	padding: 20px 50px 0px 25px;
 	background-color: #F2F2F2;
 }
 }
