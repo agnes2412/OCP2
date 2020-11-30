@@ -1670,7 +1670,7 @@ h2
 
 .container3 h1
 {
-	padding-left: 0;
+	padding-left: 0px;
 }
 
 @media (max-width: 1024px) {
