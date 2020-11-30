@@ -37,10 +37,18 @@ body
 }
 }
 
+@media (max-width: 1350px){
+	#tete_et_corps
+{
+	padding: 40px;
+	width: 100%;
+}
+}
+
 @media (max-width: 1024px){
 	#tete_et_corps
 {
-	padding: 5px 5px 5px 5px;
+	padding: 10px;
 	width: 100%;
 }
 }
@@ -48,7 +56,7 @@ body
 @media (max-width: 768px){
 	#tete_et_corps
 {
-	padding: 5px 5px 5px 5px;
+	padding: 5px;
 	width: 100%;
 }
 }
@@ -56,7 +64,7 @@ body
 @media (max-width: 575px){
 	#tete_et_corps
 {
-	padding: 0 0 0 0;
+	padding: 0;
 	width: 100%;
 }
 }
@@ -129,7 +137,7 @@ header
 {
 	border-top: none;
 	margin-right: 0px;
-	padding: 0 45px 13px 35px;
+	padding: 0 45px 13px 52px;
 	border-bottom: 3px solid #F2F2F2;
 }
 }
@@ -148,7 +156,7 @@ header
 {
 	padding: 35px 35px 0px 35px;
 	border-top: 3px solid #0065FC;	
-	color: 	#0065FC;
+	color: #0065FC;
 	margin-right: -35px;
 	margin-left: -35px;
 }
@@ -743,36 +751,34 @@ h2
 
 .container1 h1
 {
-	padding-left: 30px;
+	margin-left: 30px;
 }
-
-
 
 @media (max-width: 1024px) {
 	.container1 h1
 {
-	padding-left: 20px;
+	margin-left: 30px;
 }
 }
 
 @media (max-width: 768px) {
 	.container1 h1
 {
-	padding-left: 20px;
+	margin-left: 25px;
 }
 }
 
 @media (max-width: 575px) {
 	.container1 h1
 {
-	padding-left: 20px;
+	margin-left: 20px;
 }
 }
 
 @media (max-width: 350px) {
 	.container1 h1
 {
-	padding-left: 20px;
+	margin-left: 15px;
 }
 }
 
@@ -784,7 +790,16 @@ h2
 	flex-wrap: wrap;
 }
 
-
+@media (max-width:1350px) {
+	#hebergements /*container du bloc parent hébergements*/
+{	
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+}
 
 @media (max-width:1024px) {
 	#hebergements /*container du bloc parent hébergements*/
@@ -855,7 +870,6 @@ h2
 }
 
 .mise-en-forme_heberg /*mise en forme des éléments "hébergements à Marseille"*/
-
 {
 	width: 247px;
 	height: 200px;
@@ -875,7 +889,7 @@ h2
 	border-radius: 20px;
 	box-shadow: 4px 4px 4px #e3e3e3;
 	background-color: white;
-	margin: 10px;
+	margin: 14px;
 }
 }
 
@@ -899,7 +913,7 @@ h2
 	height: 210px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #e3e3e3;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	background-color: white;
 	margin: 10px;
 }
@@ -912,7 +926,7 @@ h2
 	height: 200px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #F2F2F2.;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	background-color: white;
 	margin: 5px;
 }
@@ -925,7 +939,7 @@ h2
 	height: 205px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 4px 4px 4px #F2F2F2.;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	background-color: white;
 }
 }
@@ -1037,7 +1051,7 @@ h2
 {
 .aff_plus
 {
-	margin-left: 20px;
+	margin-left: 25px;
 	font-weight: bold;
 }
 }
@@ -1115,13 +1129,34 @@ h2
 
 .container2 h1
 { 
-	padding-left: 20px;
+	margin-left: 20px;
+ }
+
+@media (max-width: 1350px)
+ {
+ 	.container2 h1
+{ margin-left: 75px;
+ }
+ }
+
+  @media (max-width: 1024px)
+ {
+ 	.container2 h1
+{ margin-left: 30px;
+ }
  }
 
  @media (max-width: 768px)
  {
  	.container2 h1
-{ padding-left: 15px;
+{ margin-left: 20px;
+ }
+ }
+
+ @media (max-width: 350px)
+ {
+ 	.container2 h1
+{ margin-left: 15px;
  }
  }
 
@@ -1135,7 +1170,7 @@ h2
 	.titre_et_fleche
 {
 	position: relative;
-	margin-left: 10px;
+	margin-left: 0px;
 
 }
 }
@@ -1170,7 +1205,34 @@ h2
 	#icone_fleche
 {
 	position: absolute;
-	margin-left: 325px; 
+	margin-left: 310px; 
+	margin-top: -38px;
+}
+}
+
+@media (max-width: 1350px) {
+	#icone_fleche
+{
+	position: absolute;
+	margin-left: 1200px; 
+	margin-top: -38px;
+}
+}
+
+@media (max-width: 1300px) {
+	#icone_fleche
+{
+	position: absolute;
+	margin-left: 1000px; 
+	margin-top: -38px;
+}
+}
+
+@media (max-width: 1150px) {
+	#icone_fleche
+{
+	position: absolute;
+	margin-left: 800px; 
 	margin-top: -38px;
 }
 }
@@ -1197,7 +1259,7 @@ h2
 	#icone_fleche
 {
 	position: absolute;
-	margin-left: 690px; 
+	margin-left: 685px; 
 	margin-top: -38px;
 }
 }
@@ -1206,7 +1268,7 @@ h2
 	#icone_fleche
 {
 	position: absolute;
-	margin-left: 300px; 
+	margin-left: 315px; 
 	margin-top: -38px;
 }
 }
@@ -1215,7 +1277,7 @@ h2
 	#icone_fleche
 {
 	position: absolute;
-	margin-left: 240px; 
+	margin-left: 260px; 
 	margin-top: -38px;
 }
 }
@@ -1295,8 +1357,8 @@ h2
 	#populaires h2
 {
 	font-size: 1em;
-	margin-bottom: 10px;
-	margin-left: 4px;
+	margin-top: 5px;
+	margin-left: 4px;	
 }
 }
 
@@ -1304,7 +1366,7 @@ h2
 	#populaires h2
 {
 	font-size: 1em;
-	margin-top: 5px;
+	margin-top: 7px;
 	margin-left: 4px;	
 	
 }
@@ -1353,7 +1415,7 @@ h2
 {
 	font-size: 0.9em;
 	margin-top: -8px;
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 	margin-left: 10px;
 }
 }
@@ -1362,8 +1424,8 @@ h2
 	#populaires p
 {
 	font-size: 0.9em;
-	margin-top: 0px;
-	margin-bottom: 5px;
+	margin-top: -8px;
+	margin-bottom: 15px;
 	margin-left: 4px;
 }
 }
@@ -1372,8 +1434,8 @@ h2
 	#populaires p
 {
 	font-size: 0.9em;
-	margin-top: 0px;
-	margin-bottom: 4px;
+	margin-top: -9px;
+	margin-bottom: 16px;
 	margin-left: 4px;
 }
 }
@@ -1500,7 +1562,7 @@ h2
 	margin: 5px;
 	border: 5px solid white;
 	border-radius: 20px;
-	box-shadow: 5px 5px 5px #F2F2F2.;
+	box-shadow: 5px 5px 5px #F2F2F2;
 	padding-right: 20px;	
 }
 } 
@@ -1561,8 +1623,8 @@ h2
 	.mise-en-forme_photo_popu/*mise en forme des photos dans les éléments "Les plus populaires"*/
 	{
 	background-size: cover;	
-	background-position: 100%;	
-	float: left;
+	background-position: 100%;
+	float:none;
 	width: 275px;
 	height: 115px;
 	border-radius: 16px 16px 0 0;
@@ -1603,7 +1665,7 @@ h2
 	background-size: cover;	
 	background-position: 100%;	
 	float: left;
-	width: 120px;
+	width: 129px;
 	height: 135px;
 	border-radius: 16px 0 0 16px;
 	margin-right: 20px;
@@ -1676,7 +1738,14 @@ h2
 @media (max-width: 1024px) {
 	.container3 h1
 {
-	padding-left: 20px;
+	padding-left: 30px;
+}
+}
+
+@media (max-width: 768px) {
+	.container3 h1
+{
+	padding-left: 25px;
 }
 }
 
@@ -1687,16 +1756,16 @@ h2
 }
 }
 
-.mise-en-forme_activ a:hover
+@media (max-width: 320px) {
+	.container3 h1
 {
-	border: 1px solid grey;
+	padding-left: 15px;
+}
 }
 
-.mise-en-forme_photo_activ
+.hover_act:hover
 {
-	background-size: cover;	
-	background-position: 100%;	
-	border-radius: 16px 16px 0 0;
+	color: grey;
 }
 
 .mise-en-forme_activ
@@ -1737,6 +1806,12 @@ h2
 }
 }
 
+.mise-en-forme_photo_activ
+{
+	background-size: cover;	
+	background-position: 100%;	
+	border-radius: 16px 16px 0 0;
+}
 
 #activites h2
 { 
@@ -1821,6 +1896,19 @@ h2
 }
 }
 
+@media (max-width: 1230px){
+	.colonne2
+{
+	
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+}
+
 @media (max-width: 1024px){
 	.colonne2
 {
@@ -1842,6 +1930,7 @@ h2
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
+	margin:0;
 }
 }
 
@@ -1858,6 +1947,15 @@ h2
 {
 	background-image: url("../img/activites/vieux_port.jpg");
 	width: 270px;
+	height: 340px;
+}
+}
+
+@media (max-width: 1230px) {
+	.activite1
+{
+	background-image: url("../img/activites/vieux_port.jpg");
+	width: 280px;
 	height: 340px;
 }
 }
@@ -1911,6 +2009,15 @@ h2
 	background-image: url(../img/activites/pomegues.jpg);
 	width: 270px;
 	height: 135px;
+}
+}
+
+@media (max-width: 1230px) {
+	.activite2
+{
+	background-image: url(../img/activites/pomegues.jpg);
+	width: 290px;
+	height: 160px;
 }
 }
 
@@ -1968,6 +2075,15 @@ h2
 }
 }
 
+@media (max-width: 1230px) {
+	.activite3
+{
+	background-image: url("../img/activites/iles_frioul.jpg");
+	width: 290px;
+	height: 100px;
+}
+}
+
 @media (max-width: 1024px) {
 	.activite3
 {
@@ -2014,6 +2130,15 @@ h2
 }
 
 @media (max-width: 1475px) {
+	.activite4
+{
+	background-image: url("../img/activites/calanques.jpg");
+	width: 270px;
+	height: 340px;
+}
+}
+
+@media (max-width: 1230px){
 	.activite4
 {
 	background-image: url("../img/activites/calanques.jpg");
@@ -2076,6 +2201,15 @@ h2
 }
 }
 
+@media (max-width: 1230px) {
+	.activite5
+{
+	background-image: url("../img/activites/bonne_mere.jpg");
+	width: 430px;
+	height: 170px;	
+}
+}
+
 @media (max-width: 1024px) {
 	.activite5
 {
@@ -2090,7 +2224,7 @@ h2
 {
 	background-image: url("../img/activites/bonne_mere.jpg");
 	width: 320px;
-	height: 145px;
+	height: 155px;
 }
 }
 
@@ -2128,6 +2262,15 @@ h2
 	background-image: url(../img/activites/longchamp.jpg);
 	width: 270px;
 	height: 135px;	
+}
+}
+
+@media (max-width: 1230px) {
+	.activite6
+{
+	background-image: url(../img/activites/longchamp.jpg);
+	width: 430px;
+	height: 170px;
 }
 }
 
