@@ -1328,7 +1328,7 @@ h2
 	#populaires p
 {
 	font-size: 0.9em;
-	margin-top: -8px;
+	margin-top: -6px;
 	margin-bottom: 15px;
 	margin-left: 10px;
 }
@@ -1338,8 +1338,8 @@ h2
 	#populaires p
 {
 	font-size: 0.9em;
-	margin-top: 0px;
-	margin-bottom: 5px;
+	margin-top: -6px;
+	margin-bottom: 15px;
 	margin-left: 4px;
 }
 }
@@ -1348,12 +1348,11 @@ h2
 	#populaires p
 {
 	font-size: 0.9em;
-	margin-top: 0px;
-	margin-bottom: 4px;
+	margin-top: -6px;
+	margin-bottom: 15px;
 	margin-left: 4px;
 }
 }
-
 
 @media (max-width:768px) {
 	#populaires p
@@ -1570,8 +1569,6 @@ h2
 	margin-right: 0;
 }
 }
-
-
 
 @media (max-width:575px) {
 	.mise-en-forme_photo_popu/*mise en forme des photos dans les éléments "Les plus populaires"*/
