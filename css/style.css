@@ -106,7 +106,12 @@ header
 }
 }
 
-.menu_heberg
+.menu_heberg 
+{
+	padding-top: 35px;
+}
+
+.menu_heberg a
 {
 	padding: 35px 35px 0px 35px;
 }
@@ -143,11 +148,8 @@ header
 
 .menu_heberg a:hover /*Apparence au survol des liens*/
 {
-	padding: 35px 35px 0px 35px;
 	border-top: 3px solid #0065FC;	
 	color: 	#0065FC;
-	margin-right: -35px;
-	margin-left: -35px;
 }
 
 .menu_heberg a:active /*Apparence lorsque l'on clique sur le lien*/
@@ -169,10 +171,14 @@ header
 }
 }
 
-.menu_act
+.menu_act 
+{
+	padding-top: 35px;
+	margin-right: 120px;
+}
+.menu_act a
 {
 	padding: 35px 35px 0px 35px;
-	margin-right: 120px;
 }
 
 @media (max-width: 575px) {
@@ -197,11 +203,8 @@ header
 
 .menu_act a:hover /*Apparence au survol des liens*/
 {
-	padding: 35px 35px 0px 35px;
 	border-top: 3px solid #0065FC;	
 	color: 	#0065FC;
-	margin-right: -35px;
-	margin-left: -35px;
 }
 
 .menu_act a:active /*Apparence lorsque l'on clique sur le lien*/
