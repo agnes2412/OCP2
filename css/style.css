@@ -1076,8 +1076,8 @@ h3
 @media (max-width: 350px) {
 	.mise-en-forme_heberg /*mise en forme des éléments "hébergements à Marseille"*/
 {
-	width: 285px;
-	height: 205px;
+	width: 282px;
+	height: 216px;
 	border: 5px solid white;
 	border-radius: 20px;
 	box-shadow: 4px 4px 4px #F2F2F2;
@@ -1206,8 +1206,10 @@ h3
 {
 	background-size: cover;	
 	background-position: 100%;	
-	width: 300px;
-	height: 130px;
+	float: none;
+	margin-right: 0;
+	width: 274px;
+	height: 120px;
 	border-radius: 16px 16px 0 0;
 }
 }
