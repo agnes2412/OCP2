@@ -127,11 +127,6 @@ header
 	padding-top: 35px;
 }
 
-.menu_heberg a
-{
-	padding: 35px 35px 0px 35px;
-}
-
 @media (max-width: 575px) {
 	.menu_heberg
 {
@@ -145,17 +140,40 @@ header
 	.menu_heberg
 {
 	margin-right: 0px;
+	padding-bottom: 13px;
 	border-bottom: 3px solid #F2F2F2;
 }
 }
 
+@media (max-width: 350px) {
+	.menu_heberg
+{
+	margin-right: 0px;
+	padding-bottom: 13px;
+	border-bottom: 3px solid #F2F2F2;
+}
+}
+
+.menu_heberg a
+{
+	padding: 35px 35px 0px 35px;
+}
 
 @media (max-width: 575px) {
 	.menu_heberg a
 {
 	border-top: none;
 	margin-right: 0px;
-	padding: 0px 45px 13px 45px;
+	padding: 0px 45px 13px 43px;
+}
+}
+
+@media (max-width: 360px) {
+	.menu_heberg a
+{
+	border-top: none;
+	margin-right: 0px;
+	padding: 0px 40px 13px 43px;
 }
 }
 
@@ -184,7 +202,7 @@ header
 
 
 @media (max-width: 575px){
-	.menu_heberg a:hover /*Apparence au survol des liens*/
+	.menu_heberg a:active /*Apparence en cliquant sur les liens*/
 {
 	border-top: none;
 	border-bottom: 3px solid #0065FC;
@@ -193,14 +211,29 @@ header
 }
 }
 
+@media (max-width: 360px) {
+	.menu_heberg a:active /*Apparence en cliquant sur les liens*/
+{
+	border-top: none;
+	border-bottom: 3px solid #0065FC;
+	padding: 0px 40px 13px 43px;
+	color: 	#0065FC;
+}
+}
+
+@media (max-width: 355px) {
+	.menu_heberg a
+{
+	border-top: none;
+	margin-right: 0px;
+	padding: 0px 35px 13px 35px;
+}
+}
+
 .menu_act 
 {
 	padding-top: 35px;
 	margin-right: 120px;
-}
-.menu_act a
-{
-	padding: 35px 35px 0px 35px;
 }
 
 @media (max-width: 575px) {
@@ -211,12 +244,36 @@ header
 }
 }
 
+@media (max-width: 414px) {
+	.menu_act
+{
+	border-top: none;
+	margin-right: 0px;
+	border-bottom: 3px solid #F2F2F2;
+}
+}
+
+.menu_act a
+{
+	padding: 35px 35px 0px 35px;
+}
+
 @media (max-width: 575px) {
 	.menu_act a
 {
 	border-top: none;
 	margin-right: 0px;
 	padding: 0px 50px 13px 50px;
+	border-bottom: 3px solid #F2F2F2;
+}
+}
+
+@media (max-width: 360px) {
+	.menu_act a
+{
+	border-top: none;
+	margin-right: 0px;
+	padding: 0px 45px 13px 45px;
 	border-bottom: 3px solid #F2F2F2;
 }
 }
@@ -231,30 +288,10 @@ header
 }
 }
 
-@media (max-width: 414px) {
-	.menu_act
-{
-	border-top: none;
-	margin-right: 0px;
-	border-bottom: 3px solid #F2F2F2;
-}
-}
-
 .menu_act a:hover /*Apparence au survol des liens*/
 {
 	border-top: 3px solid #0065FC;	
 	color: 	#0065FC;
-}
-
-@media (max-width: 575px){
-.menu_act a:hover /*Apparence au survol des liens*/
-{
-	border-top: none;
-	border-bottom: 3px solid #0065FC;
-	padding: 0 50px 13px 50px;
-	color: 	#0065FC;
-	
-}
 }
 
 .menu_act a:active /*Apparence lorsque l'on clique sur le lien*/
@@ -263,6 +300,26 @@ header
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1em;
+}
+
+@media (max-width: 575px){
+.menu_act a:active /*Apparence en cliquant sur les liens*/
+{
+	border-top: none;
+	border-bottom: 3px solid #0065FC;
+	padding: 0 50px 13px 50px;
+	color: 	#0065FC;	
+}
+}
+
+@media (max-width: 360px){
+.menu_act a:active /*Apparence en cliquant sur les liens*/
+{
+	border-top: none;
+	border-bottom: 3px solid #0065FC;
+	padding: 0px 45px 13px 45px;
+	color: 	#0065FC;	
+}
 }
 
 .inscription
@@ -514,7 +571,7 @@ outline: none;
 {
 	display: inline-flex;
 	border: 2px solid lightgrey;
-	border-radius: 30px 30px 30px 30px;
+	border-radius: 30px;
 	margin-left: 50px;
 	padding-right: 20px;
 }
@@ -525,7 +582,8 @@ outline: none;
 	margin-left: 0px;
 	display: inline-flex;
 	border: 2px solid lightgrey;
-	border-radius: 30px 30px 30px 30px;
+	border-radius: 30px;
+	padding-right: 20px;
 	margin-right: 20px;
 	margin-bottom: 12px;
 }
@@ -538,11 +596,32 @@ outline: none;
 	font-size: 1.1em;
 }
 
+
+@media (max-width: 414px) {
+
+#filtres a:hover /*Apparence au survol des liens*/
+{
+  	color:#0065FC;
+	font-weight: bold;
+	font-size: 1em;
+}
+}
+
 #filtres a:active /*Apparence lorsque l'on clique sur le lien*/
 {
 	color: grey;
 	text-decoration: none;
 	font-size: 1.1em;
+}
+
+@media (max-width: 414px) {
+
+#filtres a:active /*Apparence lorsque l'on clique sur le lien*/
+{
+	color: grey;
+	text-decoration: none;
+	font-size: 1em;
+}
 }
 
 .fa-money-bill-wave
@@ -791,6 +870,30 @@ h3
 }
 }
 
+@media (max-width: 700px) {
+	.container1 h2
+{
+	margin-left: 6%;
+	font-size: 1.4em;
+}
+}
+
+@media (max-width: 650px) {
+	.container1 h2
+{
+	margin-left: 11%;
+	font-size: 1.4em;
+}
+}
+
+@media (max-width: 650px) {
+	.container1 h2
+{
+	margin-left: 8%;
+	font-size: 1.4em;
+}
+}
+
 @media (max-width: 414px) {
 	.container1 h2
 {
@@ -800,6 +903,7 @@ h3
 }
 #hebergements /*container du bloc parent hébergements*/
 {	
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -810,7 +914,6 @@ h3
 @media (max-width:1024px) {
 	#hebergements /*container du bloc parent hébergements*/
 {	
-	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
@@ -837,10 +940,7 @@ h3
 	#hebergements h3
 {
 	font-size: 1.2em;
-	margin-top: 15px;
-	margin-left: 8px;	
-	margin-bottom: 8px;
-	margin-right: 5px;
+	margin: 15px 5px 8px 8px;
 }
 }
 
@@ -848,20 +948,14 @@ h3
 	#hebergements h3
 {
 	font-size: 1em;
-	margin-top: 7px;
-	margin-left: 10px;	
-	margin-bottom: 10px;
-	margin-right: 5px;
+	margin: 7px 5px 10px 10px;
 }
 }
 @media (max-width: 414px) {
 	#hebergements h3
 {
 	font-size: 1em;
-	margin-top: 7px;
-	margin-left: 10px;	
-	margin-bottom: 10px;
-	margin-right: 5px;
+	margin: 7px 5px 10px 10px;
 }
 }
 
@@ -875,7 +969,7 @@ h3
 @media (max-width: 1400px) {
 	#hebergements p 
 {
-	margin-top: -7px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
+	margin-top: -8px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
 	margin-left: 10px;
 	font-size: 0.9em;
 }
@@ -897,6 +991,7 @@ h3
 	margin-top: -6px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
 	margin-left: 10px;
 	font-size: 0.9em;
+	margin-bottom: 14px;
 }
 }
 
@@ -995,7 +1090,7 @@ h3
 }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
 	.mise-en-forme_heberg /*mise en forme des éléments "hébergements à Marseille"*/
 {
 	width: 240px;
@@ -1008,7 +1103,7 @@ h3
 }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 830px) {
 	.mise-en-forme_heberg /*mise en forme des éléments "hébergements à Marseille"*/
 {
 	width: 210px;
@@ -1030,7 +1125,7 @@ h3
 	border-radius: 20px;
 	box-shadow: 4px 4px 4px #F2F2F2;
 	background-color: white;
-	margin: 5px;
+	margin: 10px;
 }
 }
 
@@ -1127,7 +1222,7 @@ h3
 }
 }
 
-@media (max-width: 950px){
+@media (max-width: 970px){
 .mise-en-forme_photo_heberg
 {
 	background-size: cover;	
@@ -1138,7 +1233,7 @@ h3
 }
 }
 
-@media (max-width: 810px){
+@media (max-width: 830px){
 .mise-en-forme_photo_heberg
 {
 	background-size: cover;	
@@ -1281,7 +1376,30 @@ h3
 	font-weight: bold;
 }
 }
+@media (max-width: 700px) {
+	.aff_plus
+{
+	margin-left: 6%;
+	font-weight: bold;
+}
+}
 
+@media (max-width: 650px) {
+	.aff_plus
+{
+	margin-left: 11%;
+	font-weight: bold;
+}
+}
+
+
+@media (max-width: 600px) {
+	.aff_plus
+{
+	margin-left: 8%;
+	font-weight: bold;
+}
+}
 @media (max-width: 414px) {
 	.aff_plus
 {
@@ -1326,7 +1444,7 @@ h3
 }
 }
 
-@media (max-width:950px){
+@media (max-width:970px){
 		.container2/*container du bloc populaires et background grey*/
 {
 	padding-top: 20px;
@@ -1334,6 +1452,7 @@ h3
 	background-color:#F2F2F2; 
 	border-radius: 0px;
 	margin-left: 0px;
+	margin-bottom: 20px;
 }
 }
 
@@ -1396,6 +1515,30 @@ h3
 }
 }
 
+@media (max-width: 700px) {
+	.container2 h2
+{ 
+	margin-left: 6%;
+	font-size: 1.4em;
+}
+}
+
+@media (max-width: 650px) {
+	.container2 h2
+{ 
+	margin-left: 11%;
+	font-size: 1.4em;
+}
+}
+
+@media (max-width: 600px) {
+	.container2 h2
+{ 
+	margin-left: 8%;
+	font-size: 1.4em;
+}
+}
+
 @media (max-width: 414px) {
 	.container2 h2
 { 
@@ -1434,6 +1577,15 @@ h3
 {
 	position: absolute;
 	margin-left: 80%; 
+	margin-top: -43px;
+}
+}
+
+@media (max-width: 700px) {
+	#icone_fleche
+{
+	position: absolute;
+	margin-left: 84%; 
 	margin-top: -43px;
 }
 }
@@ -1517,7 +1669,7 @@ h3
 }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
 	#populaires h3
 {
 	word-break: break-word;
@@ -1588,7 +1740,7 @@ h3
 }
 }
 
-@media (max-width:950px) {
+@media (max-width:970px) {
 	#populaires p
 {
 	font-size: 0.9em;
@@ -1677,7 +1829,7 @@ h3
 }
 }  
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
 	.mise-en-forme_popu/*mise en forme des éléments "Les plus populaires"*/
 {
 	background-color: white;
@@ -1691,7 +1843,7 @@ h3
 }
 } 
 
-@media (max-width: 810px) {
+@media (max-width: 830px) {
 	.mise-en-forme_popu/*mise en forme des éléments "Les plus populaires"*/
 {
 	background-color: white;
@@ -1712,7 +1864,7 @@ h3
 	background-color: white;
 	width: 560px;
 	height: 215px;
-	margin: 5px;
+	margin: 10px;
 	border: 5px solid white;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px #F2F2F2;
@@ -1768,7 +1920,7 @@ h3
 	background-color: white;
 	width: 282px;
 	height: 135px;
-	margin: 15px;
+	margin: 5px;
 	border: 5px solid white;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px #F2F2F2;
@@ -1812,7 +1964,7 @@ h3
 	margin-right: 0;
 }
 }
-@media (max-width: 950px) {
+@media (max-width: 970px) {
 	.mise-en-forme_photo_popu/*mise en forme des photos dans les éléments "Les plus populaires"*/
 {
 	background-size: cover;	
@@ -1825,7 +1977,7 @@ h3
 }
 
 
-@media (max-width: 810px) {
+@media (max-width: 830px) {
 	.mise-en-forme_photo_popu/*mise en forme des photos dans les éléments "Les plus populaires"*/
 {
 	background-size: cover;	
@@ -1870,7 +2022,7 @@ h3
 	background-position: 100%;	
 	float: left;
 	width: 178px;
-	height: 180px;
+	height: 170px;
 	border-radius: 16px 0 0 16px;
 	margin-right: 20px;
 }
@@ -1961,6 +2113,30 @@ h3
 	.container3 h2
 {
 	margin-left: 10%;
+	font-size: 1.4em;
+}
+}
+
+@media (max-width: 700px) {
+	.container3 h2
+{
+	margin-left: 6%;
+	font-size: 1.4em;
+}
+}
+
+@media (max-width: 600px) {
+	.container3 h2
+{
+	margin-left: 8%;
+	font-size: 1.4em;
+}
+}
+@media (max-width: 70px) {
+	.container3 h2
+{
+	margin-left: 6%;
+	font-size: 1.4em;
 }
 }
 
@@ -2004,13 +2180,13 @@ h3
 }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
 	.mise-en-forme_activ
 {
 	background-color: white;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px #F2F2F2;
-	margin: 5px;
+	margin: 3px;
 }
 }
 
@@ -2105,7 +2281,7 @@ h3
 }
 }
 
-@media (max-width: 990px){
+@media (max-width: 1000px){
 	.colonne2
 {
 	width: auto;
@@ -2159,7 +2335,7 @@ h3
 }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
 	.activite1
 {
 	background-image: url("../img/activites/vieux_port.jpg");
@@ -2168,7 +2344,7 @@ h3
 }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 910px) {
 	.activite1
 {
 	background-image: url("../img/activites/vieux_port.jpg");
@@ -2264,7 +2440,7 @@ h3
 }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
 	.activite2
 {
 	background-image: url(../img/activites/pomegues.jpg);
@@ -2273,7 +2449,7 @@ h3
 }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 910px) {
 	.activite2
 {
 	background-image: url(../img/activites/pomegues.jpg);
@@ -2281,6 +2457,8 @@ h3
 	height: 134px;
 }
 }
+
+
 
 @media (max-width: 750px) {
 	.activite2
@@ -2371,7 +2549,7 @@ h3
 }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
 	.activite3
 {
 	background-image: url("../img/activites/iles_frioul.jpg");
@@ -2380,7 +2558,7 @@ h3
 }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 910px) {
 	.activite3
 {
 	background-image: url("../img/activites/iles_frioul.jpg");
@@ -2478,7 +2656,7 @@ h3
 }
 }
 
-@media (max-width: 990px){
+@media (max-width: 1000px){
 	.activite4
 {
 	background-image: url("../img/activites/calanques.jpg");
@@ -2487,7 +2665,7 @@ h3
 }
 }
 
-@media (max-width: 890px){
+@media (max-width: 910px){
 	.activite4
 {
 	background-image: url("../img/activites/calanques.jpg");
@@ -2585,7 +2763,7 @@ h3
 }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
 	.activite5
 {
 	background-image: url("../img/activites/bonne_mere.jpg");
@@ -2594,7 +2772,7 @@ h3
 }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 910px) {
 	.activite5
 {
 	background-image: url("../img/activites/bonne_mere.jpg");
@@ -2691,7 +2869,7 @@ h3
 }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
 	.activite6
 {
 	background-image: url(../img/activites/longchamp.jpg);
@@ -2701,7 +2879,7 @@ h3
 }
 
 
-@media (max-width: 890px) {
+@media (max-width: 910px) {
 	.activite6
 {
 	background-image: url(../img/activites/longchamp.jpg);
