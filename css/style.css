@@ -44,6 +44,14 @@ body
 }
 }
 
+@media (max-width: 1200px){
+	#tete_et_corps
+{
+	padding: 10px 30px 10px 30px;
+	width: 100%;
+}
+}
+
 @media (max-width: 1150px){
 	#tete_et_corps
 {
@@ -117,6 +125,17 @@ header
 	#menu 
 {
 	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+}
+
+@media (max-width: 414px) {
+	#menu 
+{
+	display: flex;
+	justify-content: center;
 	margin-top: 0px;
 	padding-bottom: 0px;
 }
@@ -136,24 +155,6 @@ header
 }
 }
 
-@media (max-width: 350px) {
-	.menu_heberg
-{
-	margin-right: 0px;
-	padding-bottom: 13px;
-	border-bottom: 3px solid #F2F2F2;
-}
-}
-
-@media (max-width: 350px) {
-	.menu_heberg
-{
-	margin-right: 0px;
-	padding-bottom: 13px;
-	border-bottom: 3px solid #F2F2F2;
-}
-}
-
 .menu_heberg a
 {
 	padding: 35px 35px 0px 35px;
@@ -162,22 +163,23 @@ header
 @media (max-width: 575px) {
 	.menu_heberg a
 {
+	width: 50%;
 	border-top: none;
 	margin-right: 0px;
-	padding: 0px 45px 13px 43px;
+	padding: 0px 45px 13px 45px;
 }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 374px) {
 	.menu_heberg a
 {
 	border-top: none;
 	margin-right: 0px;
-	padding: 0px 40px 13px 43px;
+	padding: 0px 40px 13px 40px;
 }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
 	.menu_heberg a
 {
 	border-top: none;
@@ -192,12 +194,20 @@ header
 	color: 	#0065FC;
 }
 
+@media (max-width: 575px){
+.menu_heberg a:hover /*Apparence au survol des liens*/
+{
+	border-top: none;
+	border-bottom: 3px solid #0065FC;	
+	color: 	#0065FC;
+}
+}
+
 .menu_heberg a:active /*Apparence lorsque l'on clique sur le lien*/
 {
 	color: #0065FC;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 1em;
 }
 
 
@@ -206,7 +216,6 @@ header
 {
 	border-top: none;
 	border-bottom: 3px solid #0065FC;
-	padding: 0 45px 13px 45px;
 	color: 	#0065FC;
 }
 }
@@ -216,17 +225,7 @@ header
 {
 	border-top: none;
 	border-bottom: 3px solid #0065FC;
-	padding: 0px 40px 13px 43px;
 	color: 	#0065FC;
-}
-}
-
-@media (max-width: 355px) {
-	.menu_heberg a
-{
-	border-top: none;
-	margin-right: 0px;
-	padding: 0px 35px 13px 35px;
 }
 }
 
@@ -241,10 +240,11 @@ header
 {
 	border-top: none;
 	margin-right: 0px;
+	border-bottom: 3px solid #F2F2F2;
 }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 350px) {
 	.menu_act
 {
 	border-top: none;
@@ -261,6 +261,7 @@ header
 @media (max-width: 575px) {
 	.menu_act a
 {
+	width: 50%;
 	border-top: none;
 	margin-right: 0px;
 	padding: 0px 50px 13px 50px;
@@ -268,7 +269,7 @@ header
 }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 374px) {
 	.menu_act a
 {
 	border-top: none;
@@ -278,12 +279,12 @@ header
 }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
 	.menu_act a
 {
 	border-top: none;
 	margin-right: 0px;
-	padding: 0px 40px 13px 40px;
+	padding: 0px 38px 13px 38px;
 	border-bottom: 3px solid #F2F2F2;
 }
 }
@@ -292,6 +293,15 @@ header
 {
 	border-top: 3px solid #0065FC;	
 	color: 	#0065FC;
+}
+
+@media (max-width: 575px){
+.menu_act a:hover /*Apparence au survol des liens*/
+{
+	border-top: none;
+	border-bottom: 3px solid #0065FC;	
+	color: 	#0065FC;
+}
 }
 
 .menu_act a:active /*Apparence lorsque l'on clique sur le lien*/
@@ -307,7 +317,6 @@ header
 {
 	border-top: none;
 	border-bottom: 3px solid #0065FC;
-	padding: 0 50px 13px 50px;
 	color: 	#0065FC;	
 }
 }
@@ -317,7 +326,6 @@ header
 {
 	border-top: none;
 	border-bottom: 3px solid #0065FC;
-	padding: 0px 45px 13px 45px;
 	color: 	#0065FC;	
 }
 }
@@ -329,15 +337,6 @@ header
 	top: 35px;
 }
 
-.inscription a:active /*Apparence lorsque l'on clique sur le lien*/
-{
-	color: blue;
-	background:  #F2F2F2;
-	text-decoration: none;
-	font-size: 1em;
-	padding: 4px;
-}
-
 @media (max-width: 575px) {
 	.inscription
 {
@@ -346,6 +345,12 @@ header
 	top: 35px;
 }
 }
+
+.inscription a:active /*Apparence lorsque l'on clique sur le lien*/
+{
+	text-decoration: none;
+	font-size: 1.1em;
+} 
 
 #recherches /*Bloc recherches*/
 {
@@ -463,7 +468,6 @@ outline: none;
 	margin-bottom: 10px;
 	padding-top: 15px;
 }
-
 
 @media (max-width: 1150px)
 {
@@ -615,7 +619,6 @@ outline: none;
 }
 
 @media (max-width: 414px) {
-
 #filtres a:active /*Apparence lorsque l'on clique sur le lien*/
 {
 	color: grey;
@@ -784,19 +787,18 @@ h3
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 100%;
-	background-color:#F2F2F2; 
+	background-color: #F2F2F2; 
 	border-radius: 20px;
 	margin-bottom: 30px;
 }
 }
 
-@media (max-width: 950px)
+@media (max-width: 970px)
 {
 	.container1/*container du bloc hébergements et background grey*/
 {
-	width: 100%;
 	background-color: white; 
-	border-radius: 0px;
+	border-radius: 20px;
 	margin-bottom: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -985,7 +987,7 @@ h3
 }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
 	#hebergements p 
 {
 	margin-top: -6px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
@@ -1384,15 +1386,6 @@ h3
 }
 }
 
-@media (max-width: 650px) {
-	.aff_plus
-{
-	margin-left: 11%;
-	font-weight: bold;
-}
-}
-
-
 @media (max-width: 600px) {
 	.aff_plus
 {
@@ -1400,6 +1393,7 @@ h3
 	font-weight: bold;
 }
 }
+
 @media (max-width: 414px) {
 	.aff_plus
 {
@@ -1608,7 +1602,6 @@ h3
 }
 }
 
-
 .fa-chart-line
 {
 	font-size: 1.4em;
@@ -1649,7 +1642,6 @@ h3
 {
 	margin-left: 10px;
 }
-
 
 @media (max-width:1400px) {
 	#populaires h3
@@ -1712,6 +1704,7 @@ h3
 	margin-right: 5px;
 }
 }
+
 @media (max-width: 414px) {
 	#populaires h3
 { 
@@ -1964,6 +1957,7 @@ h3
 	margin-right: 0;
 }
 }
+
 @media (max-width: 970px) {
 	.mise-en-forme_photo_popu/*mise en forme des photos dans les éléments "Les plus populaires"*/
 {
@@ -2252,7 +2246,7 @@ h3
 	flex-wrap: wrap;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
 	.colonne1
 {
 	display: flex;
@@ -2269,19 +2263,18 @@ h3
 	flex-wrap: wrap;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1215px){
 	.colonne2
 {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	flex-wrap: wrap;
-	
+	flex-wrap: wrap;	
 }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1010px){
 	.colonne2
 {
 	width: auto;
@@ -2316,7 +2309,8 @@ h3
 	height: 360px;
 }
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1215px) {
 	.activite1
 {
 	background-image: url("../img/activites/vieux_port.jpg");
@@ -2324,7 +2318,6 @@ h3
 	height: 350px;
 }
 }
-
 
 @media (max-width: 1024px) {
 	.activite1
@@ -2335,7 +2328,7 @@ h3
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
 	.activite1
 {
 	background-image: url("../img/activites/vieux_port.jpg");
@@ -2422,7 +2415,8 @@ h3
 	height: 165px;
 }
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1215px) {
 	.activite2
 {
 	background-image: url(../img/activites/pomegues.jpg);
@@ -2440,7 +2434,7 @@ h3
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
 	.activite2
 {
 	background-image: url(../img/activites/pomegues.jpg);
@@ -2497,7 +2491,6 @@ h3
 }
 
 @media (max-width: 350px) {
-
 .activite2
 {
 	background-image: url(../img/activites/pomegues.jpg);
@@ -2531,7 +2524,7 @@ h3
 }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
 	.activite3
 {
 	background-image: url("../img/activites/iles_frioul.jpg");
@@ -2549,7 +2542,7 @@ h3
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
 	.activite3
 {
 	background-image: url("../img/activites/iles_frioul.jpg");
@@ -2604,7 +2597,6 @@ h3
 }
 
 @media (max-width: 350px) {
-
 .activite3
 {
 	background-image: url("../img/activites/iles_frioul.jpg");
@@ -2638,7 +2630,7 @@ h3
 }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1215px){
 	.activite4
 {
 	background-image: url("../img/activites/calanques.jpg");
@@ -2656,7 +2648,7 @@ h3
 }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1010px){
 	.activite4
 {
 	background-image: url("../img/activites/calanques.jpg");
@@ -2691,6 +2683,7 @@ h3
 	height: 200px;
 }
 }
+
 @media (max-width: 550px) {
 	.activite4
 {
@@ -2699,7 +2692,6 @@ h3
 	height: 200px;
 }	
 }
-
 
 @media (max-width: 414px) {
 	.activite4
@@ -2711,7 +2703,6 @@ h3
 }
 
 @media (max-width: 350px) {
-
 .activite4
 {
 	background-image: url("../img/activites/calanques.jpg");
@@ -2744,12 +2735,11 @@ h3
 }
 }
 
-
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
 	.activite5
 {
 	background-image: url("../img/activites/bonne_mere.jpg");
-	width: 500px;
+	width: 490px;
 	height: 200px;	
 }
 }
@@ -2763,7 +2753,7 @@ h3
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
 	.activite5
 {
 	background-image: url("../img/activites/bonne_mere.jpg");
@@ -2851,11 +2841,11 @@ h3
 }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
 	.activite6
 {
 	background-image: url(../img/activites/longchamp.jpg);
-	width: 500px;
+	width: 490px;
 	height: 200px;
 }
 }
@@ -2869,7 +2859,7 @@ h3
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
 	.activite6
 {
 	background-image: url(../img/activites/longchamp.jpg);
@@ -2926,7 +2916,6 @@ h3
 }
 
 @media (max-width: 350px) {
-
 .activite6
 {
 	background-image: url(../img/activites/longchamp.jpg);
