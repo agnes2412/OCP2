@@ -997,6 +997,16 @@ h3
 }
 }
 
+@media (max-width: 768px) {
+	#hebergements p 
+{
+	margin-top: -6px; /*réduit l'espace entre le <p> et le <h2> dans l'espace texte des photos*/
+	margin-left: 10px;
+	font-size: 0.9em;
+	margin-bottom: 14px;
+}
+}
+
 @media (max-width: 750px) {
 	#hebergements p 
 {
